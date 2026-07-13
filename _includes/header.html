@@ -1,0 +1,10 @@
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="site-title" href="{{ '/' | relative_url }}">Aaron Earle-Richardson</a>
+    <nav class="site-nav" aria-label="Primary">
+      <a class="nav-link" href="{{ '/' | relative_url }}" {% if page.url == '/' %}aria-current="page"{% endif %}>Home</a>
+      <a class="nav-link" href="{{ '/projects/' | relative_url }}" {% if page.url contains '/projects/' %}aria-current="page"{% endif %}>Projects</a>
+      <a class="nav-link" href="{{ '/about/' | relative_url }}" {% if page.url == '/about/' %}aria-current="page"{% endif %}>About</a>
+    </nav>
+  </div>
+</header>

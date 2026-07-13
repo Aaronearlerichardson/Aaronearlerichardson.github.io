@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+{% include head.html %}
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+{% include header.html %}
+<main id="main" class="wrap">
+  <article>
+    <header class="project-header">
+      <p class="hero__eyebrow"><a href="{{ '/projects/' | relative_url }}" style="color:inherit;text-decoration:none;">&larr; Projects</a></p>
+      <h1>{{ page.title }}</h1>
+      {% if page.summary %}<p class="project-header__meta">{{ page.summary }}</p>{% endif %}
+      {% if page.stack %}
+      <ul class="tag-list" aria-label="Technologies used">
+        {% for item in page.stack %}<li class="tag">{{ item }}</li>{% endfor %}
+      </ul>
+      {% endif %}
+      <div class="project-links">
+        {% if page.repo %}
+          <a class="button button--ghost" href="{{ page.repo }}">View source on GitHub</a>
+        {% else %}
+          <span class="private-note">
+            <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" fill="currentColor"><path d="M8 1a3 3 0 0 0-3 3v2H4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1h-1V4a3 3 0 0 0-3-3Zm0 1.5A1.5 1.5 0 0 1 9.5 4v2h-3V4A1.5 1.5 0 0 1 8 2.5Z"/></svg>
+            Source repository is private
+          </span>
+        {% endif %}
+      </div>
+    </header>
+
+    {{ content }}
+
+    <nav class="project-nav" aria-label="More projects">
+      {% assign projects = site.projects | sort: 'order' %}
+      {% assign current_index = nil %}
+      {% for p in projects %}
+        {% if p.url == page.url %}{% assign current_index = forloop.index0 %}{% endif %}
+      {% endfor %}
+      {% assign prev_index = current_index | minus: 1 %}
+      {% assign next_index = current_index | plus: 1 %}
+      {% if current_index > 0 %}
+        <a href="{{ projects[prev_index].url | relative_url }}">&larr; {{ projects[prev_index].title }}</a>
+      {% else %}
+        <span></span>
+      {% endif %}
+      {% if next_index < projects.size %}
+        <a href="{{ projects[next_index].url | relative_url }}">{{ projects[next_index].title }} &rarr;</a>
+      {% endif %}
+    </nav>
+  </article>
+</main>
+{% include footer.html %}
+</body>
+</html>

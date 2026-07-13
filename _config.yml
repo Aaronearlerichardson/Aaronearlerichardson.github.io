@@ -1,0 +1,56 @@
+title: Aaron Earle-Richardson
+tagline: Neural signal processing & BCI engineering
+description: >-
+  Portfolio of Aaron Earle-Richardson — neural signal processing, BCI, and
+  machine learning engineering at Duke University's Cogan Lab.
+url: "https://aaronearlerichardson.github.io"
+baseurl: ""
+
+author:
+  name: Aaron Earle-Richardson
+  email: ae166@duke.edu
+  github: Aaronearlerichardson
+  linkedin: aaron-earle-richardson-781747184
+
+# The github-pages gem defaults every site to a bundled theme
+# (jekyll-theme-primer) unless this is explicitly disabled — this site
+# is hand-rolled, so it stays off.
+theme: null
+
+# GitHub Pages builds with the `github-pages` gem, so the Jekyll version
+# and every plugin below matches what pages.github.com serves in
+# production. No custom Actions build is needed. See README for details.
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: project
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+sass:
+  style: compressed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - node_modules
+  - vendor
