@@ -9,8 +9,8 @@ summary: "Bio, education, and skills for Aaron Earle-Richardson — neural signa
 
 <p>
   I'm a Scientific Data Manager in the <a href="https://github.com/coganlab">Cogan Lab</a>
-  at Duke University's Department of Neurology, where I build the data
-  infrastructure and analysis pipelines behind intracranial neuroscience
+  at Duke University's Department of Neurology, where I build the decoding
+  pipelines and data infrastructure behind intracranial neuroscience
   research aimed at speech brain-computer interfaces. I work day-to-day
   with high-density &mu;ECoG arrays (up to 1024 channels) recorded
   intraoperatively at Duke University Medical Center, in collaboration
@@ -84,6 +84,12 @@ summary: "Bio, education, and skills for Aaron Earle-Richardson — neural signa
 </p>
 
 <h2>Skills</h2>
+<p>
+  Day to day the split is roughly: PyTorch and signal-processing work on
+  the decoding side, systems and data-infrastructure work underneath it,
+  and regulatory rigor whenever the work touches an actual implanted
+  device.
+</p>
 <div class="skill-groups">
   <div class="skill-group">
     <h3>Programming</h3>

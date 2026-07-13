@@ -1,18 +1,19 @@
 ---
 layout: home
 title: null
+search_title: Home
+summary: "Neural signal processing and BCI engineering — PyTorch decoders, real-time signal processing, and data infrastructure for clinical brain-computer interface research at Duke."
 permalink: /
 ---
 
 <section class="hero">
-  <p class="hero__eyebrow">Duke University — Cogan Lab</p>
+  <p class="hero__eyebrow">BCI &amp; Neural Signal Processing — Duke, Cogan Lab</p>
   <h1>Aaron Earle-Richardson</h1>
   <p class="hero__lede">
-    I build data pipelines and analysis software for intracranial
-    neuroscience — turning high-density μECoG and iEEG recordings into
-    signal a brain-computer interface can act on. Scientific Data Manager
-    at Duke, working under FDA IDE and IRB oversight on speech-BCI
-    research.
+    I build the software between raw neural signal and a working
+    brain-computer interface — PyTorch decoders, real-time
+    signal-processing pipelines, and the data infrastructure underneath
+    them — for FDA-regulated clinical BCI research at Duke.
   </p>
   <div class="hero__actions">
     <a class="button" href="{{ '/projects/' | relative_url }}">See my projects</a>

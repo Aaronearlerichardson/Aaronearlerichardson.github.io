@@ -1,10 +1,48 @@
 <header class="site-header">
   <div class="site-header__inner">
     <a class="site-title" href="{{ '/' | relative_url }}">Aaron Earle-Richardson</a>
-    <nav class="site-nav" aria-label="Primary">
-      <a class="nav-link" href="{{ '/' | relative_url }}" {% if page.url == '/' %}aria-current="page"{% endif %}>Home</a>
-      <a class="nav-link" href="{{ '/projects/' | relative_url }}" {% if page.url contains '/projects/' %}aria-current="page"{% endif %}>Projects</a>
-      <a class="nav-link" href="{{ '/about/' | relative_url }}" {% if page.url == '/about/' %}aria-current="page"{% endif %}>About</a>
-    </nav>
+
+    <div class="site-header__controls">
+      <div class="site-search" role="search">
+        <label for="site-search-input" class="visually-hidden">Search the site</label>
+        <div class="site-search__field">
+          <input
+            type="text"
+            id="site-search-input"
+            class="site-search__input"
+            role="combobox"
+            aria-expanded="false"
+            aria-haspopup="listbox"
+            aria-controls="site-search-listbox"
+            aria-autocomplete="list"
+            autocomplete="off"
+            spellcheck="false"
+            placeholder="Search…"
+            data-index-url="{{ '/assets/search-index.json' | relative_url }}"
+            disabled>
+          <ul id="site-search-listbox" class="site-search__listbox" role="listbox" aria-label="Search results" hidden></ul>
+        </div>
+        <p class="site-search__note" id="site-search-note">Search requires JavaScript.</p>
+        <p class="visually-hidden" role="status" aria-live="polite" id="site-search-status"></p>
+      </div>
+
+      <nav class="site-nav" aria-label="Primary">
+        <a class="nav-link" href="{{ '/' | relative_url }}" {% if page.url == '/' %}aria-current="page"{% endif %}>Home</a>
+        <a class="nav-link" href="{{ '/projects/' | relative_url }}" {% if page.url contains '/projects/' %}aria-current="page"{% endif %}>Projects</a>
+        <a class="nav-link" href="{{ '/about/' | relative_url }}" {% if page.url == '/about/' %}aria-current="page"{% endif %}>About</a>
+      </nav>
+
+      <button type="button" id="theme-toggle" class="theme-toggle" aria-pressed="false" aria-label="Switch to dark theme" hidden>
+        <svg class="theme-toggle__icon theme-toggle__icon--sun" viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="12" cy="12" r="4.5"/>
+          <g stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+            <path d="M12 2.5v2.6M12 18.9v2.6M21.5 12h-2.6M5.1 12H2.5M18.6 5.4l-1.8 1.8M7.2 16.8l-1.8 1.8M18.6 18.6l-1.8-1.8M7.2 7.2 5.4 5.4"/>
+          </g>
+        </svg>
+        <svg class="theme-toggle__icon theme-toggle__icon--moon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M20 14.5A8.5 8.5 0 0 1 9.5 4 8.5 8.5 0 1 0 20 14.5Z"/>
+        </svg>
+      </button>
+    </div>
   </div>
 </header>

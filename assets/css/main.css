@@ -6,6 +6,7 @@
    --------------------------------------------------------------------- */
 
 :root {
+  color-scheme: light;
   --color-bg: #ffffff;
   --color-bg-subtle: #f5f8fa;
   --color-text: #2b2f33;
@@ -23,6 +24,16 @@
   --color-accent-darker: #164a6d;
   --color-accent-light: #eaf3fb;
 
+  /* Text/icon color to place ON TOP of an --color-accent-dark surface
+     (e.g. solid button backgrounds). White in light mode; dark mode
+     redefines this because its accent-dark is a pale blue instead. */
+  --color-on-accent: #ffffff;
+  --shadow-accent: rgba(31, 99, 145, 0.12);
+
+  --color-notice-bg: #fff8e6;
+  --color-notice-border: #e8d28a;
+  --color-notice-text: #6b5a10;
+
   --font-heading: "Roboto Slab", Georgia, "Times New Roman", serif;
   --font-body: Lato, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
     Arial, sans-serif;
@@ -31,6 +42,57 @@
   --content-width: 46rem;
   --wide-width: 64rem;
   --radius: 6px;
+}
+
+/* ---------- Dark theme ----------
+   Not an inversion: a separate palette in the same family as the light
+   theme (near-black warm grey bg, soft light-grey text, a *lightened*
+   blue for text/links since the light theme's navy accent-dark fails
+   contrast on a dark background). Applied two ways so it works with or
+   without JavaScript:
+     1. prefers-color-scheme, for first visit / JS-disabled visitors —
+        only takes effect when no explicit choice is stored (the
+        :not([data-theme="light"]) guard).
+     2. [data-theme="dark"], set by the inline head script from
+        localStorage or the toggle button, and always wins once present.
+   All contrast ratios below are re-verified against these exact values;
+   see the ratios noted inline. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --color-bg: #14181c;
+    --color-bg-subtle: #1b2126;
+    --color-text: #dde3e9;
+    --color-text-secondary: #98a3b0;
+    --color-border: #2c333b;
+    --color-accent: #4f9fd6;
+    --color-accent-dark: #7cc4f0;
+    --color-accent-darker: #a8d9f7;
+    --color-accent-light: #1f2f3d;
+    --color-on-accent: #0b1d2a;
+    --shadow-accent: rgba(124, 196, 240, 0.15);
+    --color-notice-bg: #2a2110;
+    --color-notice-border: #6b5518;
+    --color-notice-text: #e3c368;
+  }
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --color-bg: #14181c;
+  --color-bg-subtle: #1b2126;
+  --color-text: #dde3e9;
+  --color-text-secondary: #98a3b0;
+  --color-border: #2c333b;
+  --color-accent: #4f9fd6;
+  --color-accent-dark: #7cc4f0;
+  --color-accent-darker: #a8d9f7;
+  --color-accent-light: #1f2f3d;
+  --color-on-accent: #0b1d2a;
+  --shadow-accent: rgba(124, 196, 240, 0.15);
+  --color-notice-bg: #2a2110;
+  --color-notice-border: #6b5518;
+  --color-notice-text: #e3c368;
 }
 
 /* ---------- Reset ---------- */
@@ -53,6 +115,7 @@ body {
   font-size: 1.0625rem;
   line-height: 1.65;
   text-rendering: optimizeLegibility;
+  transition: background-color 0.15s ease, color 0.15s ease;
 }
 
 img {
@@ -166,7 +229,7 @@ hr {
   left: 0.5rem;
   z-index: 100;
   background: var(--color-accent-dark);
-  color: #fff;
+  color: var(--color-on-accent);
   padding: 0.6em 1em;
   border-radius: 0 0 var(--radius) var(--radius);
   text-decoration: none;
@@ -272,6 +335,144 @@ main {
   border-bottom-color: var(--color-accent-dark);
 }
 
+.site-header__controls {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.9rem 1.5rem;
+}
+
+/* ---------- Theme toggle ---------- */
+
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 2.25rem;
+  height: 2.25rem;
+  padding: 0;
+  border: 1px solid var(--color-border);
+  border-radius: 50%;
+  background: var(--color-bg);
+  color: var(--color-text);
+  cursor: pointer;
+}
+
+.theme-toggle:hover {
+  border-color: var(--color-accent-dark);
+  color: var(--color-accent-dark);
+}
+
+.theme-toggle svg {
+  width: 1.15rem;
+  height: 1.15rem;
+  fill: currentColor;
+}
+
+/* Icon shows the theme a click will switch TO, not the current one —
+   moon (switch to dark) in light mode, sun (switch to light) in dark
+   mode. The aria-label spells this out explicitly either way. */
+.theme-toggle__icon--sun {
+  display: none;
+}
+
+:root[data-theme="dark"] .theme-toggle__icon--sun {
+  display: block;
+}
+
+:root[data-theme="dark"] .theme-toggle__icon--moon {
+  display: none;
+}
+
+/* ---------- Search ---------- */
+
+.site-search {
+  position: relative;
+  min-width: 11rem;
+  flex: 1 1 11rem;
+  max-width: 18rem;
+}
+
+.site-search__field {
+  position: relative;
+}
+
+.site-search__input {
+  width: 100%;
+  padding: 0.45em 0.8em;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+}
+
+.site-search__input:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.site-search__input::placeholder {
+  color: var(--color-text-secondary);
+}
+
+.site-search__listbox {
+  position: absolute;
+  top: calc(100% + 0.4rem);
+  left: 0;
+  right: 0;
+  z-index: 50;
+  margin: 0;
+  padding: 0.3rem;
+  list-style: none;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  box-shadow: 0 8px 24px var(--shadow-accent);
+  max-height: 20rem;
+  overflow-y: auto;
+}
+
+.site-search__option {
+  display: block;
+  padding: 0.5em 0.7em;
+  border-radius: 4px;
+  color: var(--color-text);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.site-search__option-title {
+  display: block;
+  font-weight: 700;
+}
+
+.site-search__option-meta {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--color-text-secondary);
+}
+
+.site-search__option[aria-selected="true"],
+.site-search__option:hover {
+  background: var(--color-accent-light);
+}
+
+.site-search__empty {
+  display: block;
+  padding: 0.5em 0.7em;
+  color: var(--color-text-secondary);
+  font-size: 0.85rem;
+}
+
+.site-search__note {
+  margin: 0.3rem 0 0;
+  font-size: 0.75rem;
+  color: var(--color-text-secondary);
+}
+
 /* ---------- Footer ---------- */
 
 .site-footer {
@@ -367,7 +568,7 @@ main {
 .button {
   display: inline-block;
   background: var(--color-accent-dark);
-  color: #fff;
+  color: var(--color-on-accent);
   text-decoration: none;
   font-weight: 700;
   padding: 0.65em 1.3em;
@@ -377,7 +578,7 @@ main {
 
 .button:hover {
   background: var(--color-accent-darker);
-  color: #fff;
+  color: var(--color-on-accent);
 }
 
 .button--ghost {
@@ -431,7 +632,7 @@ main {
 
 .card:hover {
   border-color: var(--color-accent-dark);
-  box-shadow: 0 4px 14px rgba(31, 99, 145, 0.12);
+  box-shadow: 0 4px 14px var(--shadow-accent);
 }
 
 .card h3 {
@@ -554,9 +755,9 @@ main {
 }
 
 .todo-flag {
-  background: #fff8e6;
-  border: 1px solid #e8d28a;
-  color: #6b5a10;
+  background: var(--color-notice-bg);
+  border: 1px solid var(--color-notice-border);
+  color: var(--color-notice-text);
   border-radius: var(--radius);
   padding: 0.9rem 1.1rem;
   font-size: 0.9rem;
@@ -570,5 +771,15 @@ main {
 
   .site-footer__inner {
     flex-direction: column;
+  }
+
+  .site-header__controls {
+    width: 100%;
+  }
+
+  .site-search {
+    order: 3;
+    max-width: none;
+    flex-basis: 100%;
   }
 }
