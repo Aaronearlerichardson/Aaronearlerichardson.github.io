@@ -3,14 +3,26 @@ tagline: Neural signal processing & BCI engineering
 description: >-
   Portfolio of Aaron Earle-Richardson — neural signal processing, BCI, and
   machine learning engineering at Duke University's Cogan Lab.
+# This repo is named "website" (not "Aaronearlerichardson.github.io"), so
+# GitHub Pages serves it as a PROJECT site at /website/, not at the domain
+# root. baseurl carries that path prefix through every relative_url /
+# absolute_url call site-wide (nav links, CSS/JS, the search index fetch,
+# canonical tags, sitemap). If this repo is ever renamed to
+# Aaronearlerichardson.github.io, GitHub Pages switches to serving it as a
+# USER site at the root — set baseurl back to "" (and update repo_name
+# below) when that happens. See README "Publishing" section.
 url: "https://aaronearlerichardson.github.io"
-baseurl: ""
+baseurl: "/website"
 
 author:
   name: Aaron Earle-Richardson
   email: ae166@duke.edu
   github: Aaronearlerichardson
   linkedin: aaron-earle-richardson-781747184
+
+# Name of this GitHub repo — used to build the "view source" link in the
+# footer. Keep in sync with baseurl above.
+repo_name: website
 
 # The github-pages gem defaults every site to a bundled theme
 # (jekyll-theme-primer) unless this is explicitly disabled — this site

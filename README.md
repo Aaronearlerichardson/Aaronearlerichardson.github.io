@@ -43,24 +43,54 @@ no custom Actions build is needed; GitHub's native Pages build handles it.
 gem otherwise defaults every site to `jekyll-theme-primer` — this site is
 intentionally theme-free.
 
+### A note on `baseurl`
+
+This repo is named **`website`**, not `Aaronearlerichardson.github.io`, so
+GitHub Pages serves it as a **project site** at
+`https://aaronearlerichardson.github.io/website/` rather than at the
+domain root. `_config.yml` sets `baseurl: "/website"` to match, and every
+internal link/asset in the templates goes through Jekyll's `relative_url`
+/ `absolute_url` filters (never a hardcoded leading slash), so the whole
+site — CSS, JS, the search index fetch, nav links, project permalinks,
+sitemap, canonical tags — resolves correctly under that path prefix.
+
+To preview exactly what production serves (i.e. with the `/website` path
+prefix in effect), run:
+
+```bash
+bundle exec jekyll serve --baseurl /website
+```
+
+and visit `http://127.0.0.1:4000/website/` (the plain
+`bundle exec jekyll serve` without `--baseurl` above is fine for regular
+day-to-day editing — it just serves at the root instead).
+
+**If this repo is ever renamed to `Aaronearlerichardson.github.io`**,
+GitHub Pages switches to serving it as a **user site at the domain root**
+instead of a project site. To match, in `_config.yml`:
+
+```yaml
+baseurl: ""          # was "/website"
+repo_name: Aaronearlerichardson.github.io   # was "website"
+```
+
+No template changes are needed — everything reads `baseurl` through the
+Liquid filters, so those two lines are the only things that need to change.
+
 ## Publishing to GitHub Pages
 
-1. Create a **new, empty** repository on GitHub named exactly
-   `Aaronearlerichardson.github.io` (no README/license/gitignore —
-   this local repo already has them).
-2. Add it as the remote and push:
+The repo `Aaronearlerichardson/website` already exists and is already the
+`origin` remote for this local repo.
+
+1. Push this branch:
    ```bash
-   git remote add origin git@github.com:Aaronearlerichardson/Aaronearlerichardson.github.io.git
    git push -u origin main
    ```
-   (use the HTTPS URL instead if you haven't set up SSH keys:
-   `https://github.com/Aaronearlerichardson/Aaronearlerichardson.github.io.git`)
-3. On GitHub: **Settings → Pages → Build and deployment → Source** →
+2. On GitHub: **Settings → Pages → Build and deployment → Source** →
    select **Deploy from a branch**, branch **main**, folder **/ (root)** → **Save**.
-4. Wait a minute or two, then visit **https://aaronearlerichardson.github.io**.
-
-Repos named `<username>.github.io` publish automatically once Pages is
-enabled — no further config needed for future pushes to `main`.
+3. Wait a minute or two, then visit
+   **https://aaronearlerichardson.github.io/website/** (note the
+   `/website/` path — see "A note on `baseurl`" above for why).
 
 ## Content maintenance notes
 
