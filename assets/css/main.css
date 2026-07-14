@@ -1052,6 +1052,60 @@ main {
   border-radius: 12px;
 }
 
+/* --- Neuron simulator --- */
+
+.neuron-demo__network,
+.neuron-demo__raster {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 640px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: var(--color-bg);
+  cursor: pointer;
+}
+
+.neuron-demo__raster {
+  cursor: default;
+  margin-top: 0.75rem;
+}
+
+.neuron-demo__raster-label {
+  font-size: 0.75rem;
+  color: var(--color-text-secondary);
+  margin: 0.4rem 0 0;
+}
+
+.neuron-demo__controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.25rem;
+  margin: 1rem 0;
+}
+
+.neuron-demo__buttons {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.neuron-demo__slider {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  font-size: 0.85rem;
+  color: var(--color-text-secondary);
+  font-weight: 700;
+}
+
+.neuron-demo__status {
+  min-height: 1.3em;
+  font-size: 0.85rem;
+  color: var(--color-text-secondary);
+  margin: 0.5rem 0 0;
+}
+
 @media (max-width: 30em) {
   main {
     padding: 1.75rem 0 3rem;
