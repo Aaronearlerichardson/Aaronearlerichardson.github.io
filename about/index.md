@@ -103,6 +103,11 @@ description: "Bio, education, and skills for Aaron Earle-Richardson — neural s
     <time>Sept 2016 – May 2019</time>
     <strong>Cornell University</strong> — B.S., Bioengineering.
   </li>
+  <li>
+    <time>Sept 2015 – May 2016</time>
+    <strong>George Washington University</strong> — one year of undergraduate
+    study before transferring to Cornell.
+  </li>
 </ul>
 
 <h2>Publications &amp; presentations</h2>
