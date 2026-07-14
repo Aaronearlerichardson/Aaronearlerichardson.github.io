@@ -5,6 +5,9 @@ stack: [Python, Pygame, Nuitka]
 order: 3
 repo: https://github.com/Aaronearlerichardson/bitrate_game
 demo: gridquest
+thumbnail: /assets/images/thumb-bitrate-game.png
+thumbnail_webp: /assets/images/thumb-bitrate-game.webp
+thumbnail_alt: "The GridQuest selection board: a 3x3 grid of 3x3 mini-grids, with one target cell highlighted gold inside the bottom-right tile."
 ---
 
 ## What it measures

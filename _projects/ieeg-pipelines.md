@@ -4,6 +4,9 @@ description: "Author and lead maintainer of the Cogan Lab's open-source iEEG/ECo
 stack: [Python, MATLAB, Cython, CUDA]
 order: 2
 repo: https://github.com/coganlab/IEEG_Pipelines
+thumbnail: /assets/images/thumb-ieeg-pipelines.jpg
+thumbnail_webp: /assets/images/thumb-ieeg-pipelines.webp
+thumbnail_alt: "3D render of a human brain with colored depth-electrode contacts and red surface electrodes, from the package's electrode-localization plotting."
 ---
 
 The lab's entire intracranial-EEG analysis stack, built and maintained from

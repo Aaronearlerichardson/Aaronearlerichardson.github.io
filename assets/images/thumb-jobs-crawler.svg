@@ -1,0 +1,46 @@
+<svg viewBox="0 0 640 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="thumb-jobs-title thumb-jobs-desc">
+  <title id="thumb-jobs-title">Job Crawler: discover, crawl, score, digest pipeline</title>
+  <desc id="thumb-jobs-desc">Schematic tile (not a screenshot): four connected pipeline stages — discover companies, crawl postings, score with the Claude API, and email a digest.</desc>
+  <rect width="640" height="360" fill="#f5f8fa"/>
+
+  <g font-family="Lato, sans-serif">
+    <!-- 4 pipeline nodes -->
+    <g transform="translate(50,130)">
+      <rect width="120" height="100" rx="8" fill="#ffffff" stroke="#dde3e8" stroke-width="2"/>
+      <circle cx="60" cy="38" r="18" fill="none" stroke="#2980b9" stroke-width="3"/>
+      <line x1="72" y1="50" x2="84" y2="62" stroke="#2980b9" stroke-width="3" stroke-linecap="round"/>
+      <text x="60" y="82" text-anchor="middle" fill="#2b2f33" font-weight="700" font-size="13">Discover</text>
+    </g>
+
+    <path d="M172,180 L212,180" stroke="#5a6470" stroke-width="2" fill="none"/>
+    <polygon points="212,180 200,173 200,187" fill="#5a6470"/>
+
+    <g transform="translate(214,130)">
+      <rect width="120" height="100" rx="8" fill="#ffffff" stroke="#dde3e8" stroke-width="2"/>
+      <path d="M40,50 h20 v-14 h20 v28 h20 v-8 h20" fill="none" stroke="#2980b9" stroke-width="3" stroke-linejoin="round"/>
+      <text x="60" y="82" text-anchor="middle" fill="#2b2f33" font-weight="700" font-size="13">Crawl</text>
+    </g>
+
+    <path d="M336,180 L376,180" stroke="#5a6470" stroke-width="2" fill="none"/>
+    <polygon points="376,180 364,173 364,187" fill="#5a6470"/>
+
+    <g transform="translate(378,130)">
+      <rect width="120" height="100" rx="8" fill="#ffffff" stroke="#dde3e8" stroke-width="2"/>
+      <polygon points="60,26 68,44 88,46 73,59 77,79 60,68 43,79 47,59 32,46 52,44" fill="#1f6391"/>
+      <text x="60" y="82" text-anchor="middle" fill="#2b2f33" font-weight="700" font-size="13">Score</text>
+    </g>
+
+    <path d="M500,180 L540,180" stroke="#5a6470" stroke-width="2" fill="none"/>
+    <polygon points="540,180 528,173 528,187" fill="#5a6470"/>
+
+    <g transform="translate(542,130)">
+      <rect width="120" height="100" rx="8" fill="#ffffff" stroke="#dde3e8" stroke-width="2"/>
+      <rect x="30" y="30" width="60" height="40" rx="4" fill="none" stroke="#2980b9" stroke-width="3"/>
+      <path d="M30,32 L60,54 L90,32" fill="none" stroke="#2980b9" stroke-width="3" stroke-linejoin="round"/>
+      <text x="60" y="82" text-anchor="middle" fill="#2b2f33" font-weight="700" font-size="13">Digest</text>
+    </g>
+
+    <text x="320" y="275" text-anchor="middle" fill="#2b2f33" font-family="'Roboto Slab', Georgia, serif" font-weight="700" font-size="13">two-track ATS crawler</text>
+    <text x="320" y="292" text-anchor="middle" fill="#5a6470" font-size="11">remote-neural and local-tech postings, same pipeline</text>
+  </g>
+</svg>

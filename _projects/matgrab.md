@@ -4,6 +4,8 @@ description: "A small PyPI package that pulls named variables out of MATLAB .mat
 stack: [Python, pandas, SciPy]
 order: 8
 repo: https://github.com/Aaronearlerichardson/matgrab
+thumbnail: /assets/images/thumb-matgrab.svg
+thumbnail_alt: "Diagram of a dotted path resolving through a nested MATLAB struct into a single field, then flattened into a pandas DataFrame table."
 ---
 
 A utility born out of a recurring annoyance: MATLAB `.mat` files store

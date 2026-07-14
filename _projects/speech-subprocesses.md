@@ -5,6 +5,8 @@ stack: [PyTorch, CUDA, iEEG, sliceTCA]
 order: 1
 repo: https://github.com/coganlab/SentenceRep_analysis
 flagship: true
+thumbnail: /assets/images/thumb-speech-subprocesses.svg
+thumbnail_alt: "Schematic diagram of sliceTCA tensor decomposition: a frequency-by-time-by-electrode data tensor approximated as a sum of rank-one slice components."
 ---
 
 <aside class="manuscript-note">

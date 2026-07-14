@@ -1,0 +1,36 @@
+<svg viewBox="0 0 640 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="thumb-tca-title thumb-tca-desc">
+  <title id="thumb-tca-title">sliceTCA tensor decomposition schematic</title>
+  <desc id="thumb-tca-desc">A three-dimensional data tensor of frequency by time by electrode is approximated as a sum of rank-one slice components, each a channel-weight vector multiplied by a shared time-frequency pattern. The author's own schematic of the method, not a figure from the manuscript.</desc>
+  <rect width="640" height="360" fill="#f5f8fa"/>
+  <g transform="translate(41,83) scale(0.9)">
+    <polygon points="40,68 64,48 148,48 124,68" fill="#eaf3fb" stroke="#5a6470" stroke-width="1.5"/>
+    <polygon points="124,68 148,48 148,148 124,168" fill="#dde3e8" stroke="#5a6470" stroke-width="1.5"/>
+    <rect x="40" y="68" width="84" height="100" fill="#f5f8fa" stroke="#5a6470" stroke-width="1.5"/>
+    <text x="82" y="190" text-anchor="middle" fill="#2b2f33" font-family="'Roboto Slab', Georgia, serif" font-weight="700" font-size="13">data tensor</text>
+    <text x="82" y="204" text-anchor="middle" fill="#5a6470" font-family="Lato, sans-serif" font-size="12">freq &#215; time &#215; electrode</text>
+    <text x="176" y="126" text-anchor="middle" fill="#5a6470" font-family="'Roboto Slab', Georgia, serif" font-weight="700" font-size="26">&#8776;</text>
+    <g transform="translate(200,0)">
+      <rect x="0" y="76" width="16" height="84" fill="#1f6391"/>
+      <text x="30" y="124" text-anchor="middle" fill="#5a6470" font-family="'Roboto Slab', Georgia, serif" font-weight="700" font-size="18">&#215;</text>
+      <rect x="44" y="76" width="66" height="84" rx="4" fill="#ffffff" stroke="#dde3e8" stroke-width="1.5"/>
+      <rect x="50" y="86" width="54" height="12" fill="#2980b9" opacity="0.9"/>
+      <rect x="50" y="104" width="54" height="12" fill="#2980b9" opacity="0.55"/>
+      <rect x="50" y="122" width="54" height="12" fill="#2980b9" opacity="0.28"/>
+      <rect x="50" y="140" width="54" height="12" fill="#2980b9" opacity="0.55"/>
+    </g>
+    <text x="330" y="126" text-anchor="middle" fill="#5a6470" font-family="'Roboto Slab', Georgia, serif" font-weight="700" font-size="26">+</text>
+    <g transform="translate(356,0)">
+      <rect x="0" y="76" width="16" height="84" fill="#1f6391"/>
+      <text x="30" y="124" text-anchor="middle" fill="#5a6470" font-family="'Roboto Slab', Georgia, serif" font-weight="700" font-size="18">&#215;</text>
+      <rect x="44" y="76" width="66" height="84" rx="4" fill="#ffffff" stroke="#dde3e8" stroke-width="1.5"/>
+      <rect x="50" y="86" width="54" height="12" fill="#2980b9" opacity="0.55"/>
+      <rect x="50" y="104" width="54" height="12" fill="#2980b9" opacity="0.28"/>
+      <rect x="50" y="122" width="54" height="12" fill="#2980b9" opacity="0.9"/>
+      <rect x="50" y="140" width="54" height="12" fill="#2980b9" opacity="0.28"/>
+    </g>
+    <text x="490" y="126" text-anchor="middle" fill="#5a6470" font-family="'Roboto Slab', Georgia, serif" font-weight="700" font-size="26">+</text>
+    <text x="524" y="122" text-anchor="middle" fill="#5a6470" font-family="'Roboto Slab', Georgia, serif" font-weight="700" font-size="26">&#8943;</text>
+    <text x="350" y="190" text-anchor="middle" fill="#2b2f33" font-family="'Roboto Slab', Georgia, serif" font-weight="700" font-size="13">rank-1 slice components</text>
+    <text x="350" y="204" text-anchor="middle" fill="#5a6470" font-family="Lato, sans-serif" font-size="12">weights &#215; time-frequency pattern</text>
+  </g>
+</svg>

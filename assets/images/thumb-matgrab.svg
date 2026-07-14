@@ -1,0 +1,35 @@
+<svg viewBox="0 0 640 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="thumb-matgrab-title thumb-matgrab-desc">
+  <title id="thumb-matgrab-title">matgrab: nested .mat struct to DataFrame</title>
+  <desc id="thumb-matgrab-desc">Schematic tile (not a screenshot): a dotted path through a nested MATLAB struct resolves to a single field, which is pulled into a flat pandas DataFrame table.</desc>
+  <rect width="640" height="360" fill="#f5f8fa"/>
+
+  <!-- nested struct, decreasing squares with a dotted resolution path -->
+  <g font-family="Lato, sans-serif">
+    <rect x="90" y="100" width="180" height="160" rx="8" fill="#ffffff" stroke="#dde3e8" stroke-width="2"/>
+    <rect x="115" y="130" width="130" height="115" rx="6" fill="#eaf3fb" stroke="#dde3e8" stroke-width="2"/>
+    <rect x="138" y="158" width="84" height="72" rx="4" fill="#1f6391"/>
+    <text x="180" y="199" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="700">CT</text>
+
+    <path d="M100,110 L150,168" stroke="#2980b9" stroke-width="2" stroke-dasharray="4 4" fill="none"/>
+
+    <text x="180" y="285" text-anchor="middle" fill="#2b2f33" font-family="'Roboto Slab', Georgia, serif" font-weight="700" font-size="13">nested .mat struct</text>
+    <text x="180" y="300" text-anchor="middle" fill="#5a6470" font-size="11">sub-D0048.anat.CT</text>
+
+    <!-- arrow -->
+    <path d="M300,190 L370,190" stroke="#5a6470" stroke-width="2" fill="none"/>
+    <polygon points="370,190 358,183 358,197" fill="#5a6470"/>
+
+    <!-- dataframe table -->
+    <g transform="translate(400,120)">
+      <rect width="160" height="140" rx="6" fill="#ffffff" stroke="#dde3e8" stroke-width="2"/>
+      <rect width="160" height="28" rx="6" fill="#2980b9"/>
+      <rect y="22" width="160" height="6" fill="#2980b9"/>
+      <line x1="53" y1="28" x2="53" y2="140" stroke="#dde3e8" stroke-width="1.5"/>
+      <line x1="107" y1="28" x2="107" y2="140" stroke="#dde3e8" stroke-width="1.5"/>
+      <line x1="0" y1="63" x2="160" y2="63" stroke="#dde3e8" stroke-width="1.5"/>
+      <line x1="0" y1="98" x2="160" y2="98" stroke="#dde3e8" stroke-width="1.5"/>
+    </g>
+    <text x="480" y="285" text-anchor="middle" fill="#2b2f33" font-family="'Roboto Slab', Georgia, serif" font-weight="700" font-size="13">pandas DataFrame</text>
+    <text x="480" y="300" text-anchor="middle" fill="#5a6470" font-size="11">one call, any nesting depth</text>
+  </g>
+</svg>

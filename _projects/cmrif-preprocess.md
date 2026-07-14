@@ -4,6 +4,9 @@ description: "A BIDS-aware fMRI preprocessing pipeline that lets you mix and mat
 stack: [Python, Nipype, BIDS, AWS]
 order: 6
 repo: https://github.com/Aaronearlerichardson/CMRIF_preprocess
+thumbnail: /assets/images/thumb-cmrif-preprocess.png
+thumbnail_webp: /assets/images/thumb-cmrif-preprocess.webp
+thumbnail_alt: "AWS console showing the custom 'Base_Image' AMI baked with the preprocessing environment, ready to launch on demand."
 ---
 
 Built for Cornell's Cornell Magnetic Resonance Imaging Facility, this is

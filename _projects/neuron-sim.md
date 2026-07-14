@@ -5,6 +5,9 @@ stack: [Python, matplotlib]
 order: 7
 repo: https://github.com/Aaronearlerichardson/Neuron_sim
 demo: neuron
+thumbnail: /assets/images/thumb-neuron-sim.png
+thumbnail_webp: /assets/images/thumb-neuron-sim.webp
+thumbnail_alt: "Network diagram from the live demo: input, LIF, and MCP neuron layers connected by excitatory and inhibitory synapses."
 ---
 
 A from-scratch discrete-time simulator for networks of spiking neurons,

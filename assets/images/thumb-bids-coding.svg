@@ -1,0 +1,36 @@
+<svg viewBox="0 0 640 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="thumb-bids-title thumb-bids-desc">
+  <title id="thumb-bids-title">BIDS_coding: raw scans converted to a BIDS layout</title>
+  <desc id="thumb-bids-desc">Schematic tile (not a screenshot): an arbitrarily named raw dataset folder converts into a standardized, PHI-scrubbed BIDS directory layout.</desc>
+  <rect width="640" height="360" fill="#f5f8fa"/>
+
+  <g font-family="Lato, sans-serif">
+    <!-- messy raw folder -->
+    <g transform="translate(80,90)">
+      <path d="M0,20 h60 l14,18 h106 v130 h-180 z" fill="#dde3e8" stroke="#5a6470" stroke-width="2" stroke-linejoin="round"/>
+      <rect x="18" y="70" width="70" height="14" rx="2" fill="#98a3b0" transform="rotate(-4 53 77)"/>
+      <rect x="24" y="96" width="90" height="14" rx="2" fill="#98a3b0" transform="rotate(3 69 103)"/>
+      <rect x="14" y="122" width="60" height="14" rx="2" fill="#98a3b0" transform="rotate(-2 44 129)"/>
+      <rect x="30" y="148" width="100" height="14" rx="2" fill="#98a3b0" transform="rotate(5 80 155)"/>
+    </g>
+    <text x="170" y="290" text-anchor="middle" fill="#2b2f33" font-family="'Roboto Slab', Georgia, serif" font-weight="700" font-size="13">raw scanner output</text>
+    <text x="170" y="306" text-anchor="middle" fill="#5a6470" font-size="11">inconsistent names, embedded PHI</text>
+
+    <path d="M300,180 L370,180" stroke="#5a6470" stroke-width="2" fill="none"/>
+    <polygon points="370,180 358,173 358,187" fill="#5a6470"/>
+
+    <!-- clean BIDS folder -->
+    <g transform="translate(400,90)">
+      <path d="M0,20 h60 l14,18 h106 v130 h-180 z" fill="#eaf3fb" stroke="#2980b9" stroke-width="2" stroke-linejoin="round"/>
+      <rect x="16" y="70" width="148" height="16" rx="3" fill="#ffffff" stroke="#dde3e8"/>
+      <text x="20" y="82" fill="#1f6391" font-size="11" font-family="'SFMono-Regular', Consolas, Menlo, monospace">sub-01/ses-01</text>
+      <rect x="16" y="94" width="148" height="16" rx="3" fill="#ffffff" stroke="#dde3e8"/>
+      <text x="20" y="106" fill="#1f6391" font-size="11">sub-01/ieeg/</text>
+      <rect x="16" y="118" width="148" height="16" rx="3" fill="#ffffff" stroke="#dde3e8"/>
+      <text x="20" y="130" fill="#1f6391" font-size="11">sub-02/ses-01</text>
+      <rect x="16" y="142" width="148" height="16" rx="3" fill="#ffffff" stroke="#dde3e8"/>
+      <text x="20" y="154" fill="#1f6391" font-size="11">participants.tsv</text>
+    </g>
+    <text x="490" y="290" text-anchor="middle" fill="#2b2f33" font-family="'Roboto Slab', Georgia, serif" font-weight="700" font-size="13">BIDS layout</text>
+    <text x="490" y="306" text-anchor="middle" fill="#5a6470" font-size="11">PHI removed in the same pass</text>
+  </g>
+</svg>

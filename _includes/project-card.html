@@ -1,0 +1,32 @@
+{% comment %}
+  Renders one project card. Params:
+    project — a project document (required)
+    heading — heading tag to use for the title, "h2" or "h3" (required,
+              chosen by the including page to keep one h1 per page)
+{% endcomment %}
+{% assign heading = include.heading | default: "h2" %}
+<li>
+  <a class="card" href="{{ include.project.url | relative_url }}">
+    {% if include.project.thumbnail %}
+    <div class="card__thumb">
+      {% if include.project.thumbnail_webp %}
+      <picture>
+        <source srcset="{{ include.project.thumbnail_webp | relative_url }}" type="image/webp" />
+        <img src="{{ include.project.thumbnail | relative_url }}" width="640" height="360" loading="lazy" decoding="async" alt="{{ include.project.thumbnail_alt }}" />
+      </picture>
+      {% else %}
+      <img src="{{ include.project.thumbnail | relative_url }}" width="640" height="360" loading="lazy" decoding="async" alt="{{ include.project.thumbnail_alt }}" />
+      {% endif %}
+    </div>
+    {% endif %}
+    <div class="card__body">
+      <{{ heading }}>{{ include.project.title }}</{{ heading }}>
+      <p>{{ include.project.description }}</p>
+      {% if include.project.stack %}
+      <ul class="tag-list" aria-label="Technologies used">
+        {% for item in include.project.stack %}<li class="tag">{{ item }}</li>{% endfor %}
+      </ul>
+      {% endif %}
+    </div>
+  </a>
+</li>

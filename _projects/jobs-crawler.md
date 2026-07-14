@@ -4,6 +4,8 @@ description: "A multi-source ATS crawler that finds neural-engineering roles by 
 stack: [Python, SQLite, "Claude API", "Gmail SMTP"]
 order: 9
 repo: https://github.com/Aaronearlerichardson/Jobs
+thumbnail: /assets/images/thumb-jobs-crawler.svg
+thumbnail_alt: "Pipeline diagram of four connected stages: Discover, Crawl, Score, and Digest."
 ---
 
 ## The problem

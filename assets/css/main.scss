@@ -891,7 +891,8 @@ main {
   border: 1px solid var(--color-border);
   border-radius: var(--radius);
   background: var(--color-bg);
-  padding: 1.5rem;
+  padding: 0;
+  overflow: hidden;
   text-decoration: none;
   color: var(--color-text);
   border-top: 3px solid var(--color-accent);
@@ -901,6 +902,31 @@ main {
 .card:hover {
   border-color: var(--color-accent-dark);
   box-shadow: 0 4px 14px var(--shadow-accent);
+}
+
+/* Fixed-ratio box so cards line up in the grid whether or not a given
+   project has a thumbnail; the image/svg fills it via object-fit so
+   nothing is ever distorted. Background shows briefly while the image
+   decodes and behind any transparent source. */
+.card__thumb {
+  display: block;
+  aspect-ratio: 16 / 9;
+  background: var(--color-bg-subtle);
+}
+
+.card__thumb picture,
+.card__thumb img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card__body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 1.5rem;
 }
 
 .card h2,

@@ -4,6 +4,9 @@ description: "Two small from-scratch tools for building probability and signal-p
 stack: [Python, Tkinter, NumPy]
 order: 4
 demo: [dice, wave]
+thumbnail: /assets/images/thumb-vizualizers.png
+thumbnail_webp: /assets/images/thumb-vizualizers.webp
+thumbnail_alt: "Bar chart from the dice-roller demo showing a combined dice pool's outcome probabilities, bell-shaped, with the mean and a 90% confidence interval marked."
 ---
 
 Two small desktop tools that build intuition for ideas I use professionally

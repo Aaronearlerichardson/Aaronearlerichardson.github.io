@@ -1,0 +1,41 @@
+<svg viewBox="0 0 640 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="thumb-kegg-title thumb-kegg-desc">
+  <title id="thumb-kegg-title">kegg-cli: shortest reaction path search</title>
+  <desc id="thumb-kegg-desc">Schematic tile (not a screenshot): a graph of compound and reaction nodes with a highlighted shortest path from a start compound to a target compound, the depth-first search this CLI performs.</desc>
+  <rect width="640" height="360" fill="#f5f8fa"/>
+
+  <g font-family="Lato, sans-serif">
+    <!-- background graph edges (unused) -->
+    <g stroke="#dde3e8" stroke-width="2" fill="none">
+      <line x1="120" y1="120" x2="230" y2="80"/>
+      <line x1="230" y1="80" x2="340" y2="130"/>
+      <line x1="120" y1="120" x2="150" y2="240"/>
+      <line x1="150" y1="240" x2="270" y2="290"/>
+      <line x1="340" y1="130" x2="430" y2="90"/>
+      <line x1="270" y1="290" x2="400" y2="270"/>
+      <line x1="430" y1="90" x2="520" y2="150"/>
+      <line x1="400" y1="270" x2="500" y2="220"/>
+      <line x1="230" y1="80" x2="150" y2="240"/>
+    </g>
+    <!-- highlighted shortest path -->
+    <path d="M120,120 L230,80 L340,130 L430,90 L520,150" fill="none" stroke="#2980b9" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- nodes -->
+    <g>
+      <circle cx="120" cy="120" r="14" fill="#2e9e5b"/>
+      <circle cx="230" cy="80" r="10" fill="#ffffff" stroke="#2980b9" stroke-width="3"/>
+      <circle cx="340" cy="130" r="10" fill="#ffffff" stroke="#2980b9" stroke-width="3"/>
+      <circle cx="430" cy="90" r="10" fill="#ffffff" stroke="#2980b9" stroke-width="3"/>
+      <circle cx="520" cy="150" r="14" fill="#c0392b"/>
+      <circle cx="150" cy="240" r="10" fill="#ffffff" stroke="#dde3e8" stroke-width="3"/>
+      <circle cx="270" cy="290" r="10" fill="#ffffff" stroke="#dde3e8" stroke-width="3"/>
+      <circle cx="400" cy="270" r="10" fill="#ffffff" stroke="#dde3e8" stroke-width="3"/>
+      <circle cx="500" cy="220" r="10" fill="#ffffff" stroke="#dde3e8" stroke-width="3"/>
+    </g>
+
+    <text x="120" y="150" text-anchor="middle" fill="#2b2f33" font-size="11" font-weight="700">start</text>
+    <text x="520" y="180" text-anchor="middle" fill="#2b2f33" font-size="11" font-weight="700">target</text>
+
+    <text x="320" y="325" text-anchor="middle" fill="#2b2f33" font-family="'Roboto Slab', Georgia, serif" font-weight="700" font-size="13">KEGG reaction graph</text>
+    <text x="320" y="342" text-anchor="middle" fill="#5a6470" font-size="11">depth-first search for the shortest compound-to-compound path</text>
+  </g>
+</svg>

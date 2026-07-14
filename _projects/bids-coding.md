@@ -4,6 +4,8 @@ description: "A configurable BIDS-conversion toolkit for the lab's iEEG datasets
 stack: [Python, BIDS, Nipype]
 order: 10
 repo: https://github.com/coganlab/BIDS_coding
+thumbnail: /assets/images/thumb-bids-coding.svg
+thumbnail_alt: "Diagram of a messy raw-scan folder converting into a standardized BIDS directory layout with PHI removed."
 ---
 
 Converting a lab's raw recordings into the BIDS standard is mostly the

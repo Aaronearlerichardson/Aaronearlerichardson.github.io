@@ -4,6 +4,8 @@ description: "A command-line pathfinder over the KEGG biochemical database — d
 stack: [Python]
 order: 14
 repo: https://github.com/Shaumik-Ashraf/kegg-cli
+thumbnail: /assets/images/thumb-kegg-cli.svg
+thumbnail_alt: "Graph diagram of compound nodes connected by reaction edges, with a shortest path highlighted from a start compound to a target compound."
 ---
 
 A cross-platform CLI for querying the Kyoto Encyclopedia of Genes and

@@ -3,6 +3,9 @@ title: "Junctional Tourniquet"
 description: "A patented, fast-deploy pneumatic tourniquet for junctional hemorrhage — a full four-semester medical device design-controls project, not just a prototype."
 stack: ["Fusion 360", "Design Controls", "ISO 14971"]
 order: 11
+thumbnail: /assets/images/thumb-junctional-tourniquet.jpg
+thumbnail_webp: /assets/images/thumb-junctional-tourniquet.webp
+thumbnail_alt: "Still from the CAD animation: the tourniquet strap routes over the shoulder through a central pressure hub positioned over the axilla."
 ---
 
 A six-person Duke engineering team project to design a tourniquet for

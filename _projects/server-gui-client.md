@@ -4,6 +4,9 @@ description: "A client/server system that routes EEG data from bedside to databa
 stack: [Python, Flask, Tkinter, MNE]
 order: 5
 repo: https://github.com/Aaronearlerichardson/Server_gui_client
+thumbnail: /assets/images/thumb-server-gui-client.png
+thumbnail_webp: /assets/images/thumb-server-gui-client.webp
+thumbnail_alt: "System data-flow diagram: a seizure-classified EEG trace triggers an alert that fans out to the database, nurse's station, and an email to the attending physician."
 ---
 
 A graduate systems-design project (Duke BME 547, built with a partner)

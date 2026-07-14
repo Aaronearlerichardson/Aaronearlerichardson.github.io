@@ -3,6 +3,9 @@ title: "EEG Earbud Biometric Authentication"
 description: "An in-ear EEG device for personal identification, small enough to fit inside an earbud — led the team through a classical-ML classifier and its transition to deep learning."
 stack: [MATLAB, Machine Learning]
 order: 12
+thumbnail: /assets/images/thumb-eeg-earbud-auth.jpg
+thumbnail_webp: /assets/images/thumb-eeg-earbud-auth.webp
+thumbnail_alt: "Still from the CAD assembly animation: the earbud shell opens to reveal the sensor electronics and pin contacts packed inside."
 ---
 
 Led a team building a personal-identification system around EEG signal

@@ -52,17 +52,7 @@ permalink: /
   <ul class="project-grid">
     {% assign projects = site.projects | sort: 'order' | slice: 1, 3 %}
     {% for project in projects %}
-    <li>
-      <a class="card" href="{{ project.url | relative_url }}">
-        <h3>{{ project.title }}</h3>
-        <p>{{ project.description }}</p>
-        {% if project.stack %}
-        <ul class="tag-list" aria-label="Technologies used">
-          {% for item in project.stack %}<li class="tag">{{ item }}</li>{% endfor %}
-        </ul>
-        {% endif %}
-      </a>
-    </li>
+      {% include project-card.html project=project heading="h3" %}
     {% endfor %}
   </ul>
 </section>

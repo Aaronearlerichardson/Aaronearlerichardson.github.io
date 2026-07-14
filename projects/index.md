@@ -16,16 +16,6 @@ what a system actually needs versus what it's tempting to build.</p>
 <ul class="project-grid">
   {% assign projects = site.projects | sort: 'order' %}
   {% for project in projects %}
-  <li>
-    <a class="card" href="{{ project.url | relative_url }}">
-      <h2>{{ project.title }}</h2>
-      <p>{{ project.description }}</p>
-      {% if project.stack %}
-      <ul class="tag-list" aria-label="Technologies used">
-        {% for item in project.stack %}<li class="tag">{{ item }}</li>{% endfor %}
-      </ul>
-      {% endif %}
-    </a>
-  </li>
+    {% include project-card.html project=project heading="h2" %}
   {% endfor %}
 </ul>
