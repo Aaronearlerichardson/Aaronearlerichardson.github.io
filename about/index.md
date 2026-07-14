@@ -27,14 +27,20 @@ summary: "Bio, education, and skills for Aaron Earle-Richardson — neural signa
   on its documentation theme.
 </p>
 
+<p>
+  I have a real passion for brain-computer interfaces, medical data
+  analysis, and research more broadly — and I'm open to new
+  opportunities in that space.
+</p>
+
 <h2>Experience</h2>
 <ul class="timeline">
   <li>
-    <time>Jan 2025 – 2026</time>
+    <time>Jan 2025 – Jun 2026</time>
     <strong>Scientific Data Manager I</strong> — Duke Department of Neurology (Cogan Lab).
-    Lead data infrastructure for research under FDA IDE and Duke IRB oversight;
-    maintain BIDS-standard systems with PHI removal for NWB/DANDI compliance;
-    author and version-control analysis pipelines; led the lab's migration
+    Led data infrastructure for research under FDA IDE and Duke IRB oversight;
+    maintained BIDS-standard systems with PHI removal for NWB/DANDI compliance;
+    authored and version-controlled analysis pipelines; led the lab's migration
     from MATLAB/Windows to a Python/Linux stack.
   </li>
   <li>
