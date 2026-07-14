@@ -45,42 +45,33 @@ intentionally theme-free.
 
 ### A note on `baseurl`
 
-This repo is named **`website`**, not `Aaronearlerichardson.github.io`, so
-GitHub Pages serves it as a **project site** at
-`https://aaronearlerichardson.github.io/website/` rather than at the
-domain root. `_config.yml` sets `baseurl: "/website"` to match, and every
-internal link/asset in the templates goes through Jekyll's `relative_url`
-/ `absolute_url` filters (never a hardcoded leading slash), so the whole
-site — CSS, JS, the search index fetch, nav links, project permalinks,
-sitemap, canonical tags — resolves correctly under that path prefix.
+This repo is named **`Aaronearlerichardson.github.io`**, so GitHub Pages
+serves it as a **user site** at the domain root:
+`https://aaronearlerichardson.github.io/`. `_config.yml` sets
+`baseurl: ""` to match. Every internal link/asset in the templates goes
+through Jekyll's `relative_url` / `absolute_url` filters (never a
+hardcoded leading slash), so the whole site — CSS, JS, the search index
+fetch, nav links, project permalinks, sitemap, canonical tags — would
+resolve correctly under a path prefix too, if that ever changes (see
+below).
 
-To preview exactly what production serves (i.e. with the `/website` path
-prefix in effect), run:
-
-```bash
-bundle exec jekyll serve --baseurl /website
-```
-
-and visit `http://127.0.0.1:4000/website/` (the plain
-`bundle exec jekyll serve` without `--baseurl` above is fine for regular
-day-to-day editing — it just serves at the root instead).
-
-**If this repo is ever renamed to `Aaronearlerichardson.github.io`**,
-GitHub Pages switches to serving it as a **user site at the domain root**
-instead of a project site. To match, in `_config.yml`:
+**If this repo is ever renamed to something other than
+`<username>.github.io`** (e.g. back to `website`), GitHub Pages switches
+to serving it as a **project site** at `/<repo-name>/` instead of the
+domain root. To match, in `_config.yml`:
 
 ```yaml
-baseurl: ""          # was "/website"
-repo_name: Aaronearlerichardson.github.io   # was "website"
+baseurl: "/<repo-name>"          # was ""
+repo_name: <repo-name>           # was "Aaronearlerichardson.github.io"
 ```
 
 No template changes are needed — everything reads `baseurl` through the
-Liquid filters, so those two lines are the only things that need to change.
+Liquid filters, so those two lines are the only things that need to
+change. To preview a project-site build locally with a path prefix in
+effect, run `bundle exec jekyll serve --baseurl /<repo-name>` and visit
+`http://127.0.0.1:4000/<repo-name>/`.
 
 ## Publishing to GitHub Pages
-
-The repo `Aaronearlerichardson/website` already exists and is already the
-`origin` remote for this local repo.
 
 1. Push this branch:
    ```bash
@@ -88,9 +79,7 @@ The repo `Aaronearlerichardson/website` already exists and is already the
    ```
 2. On GitHub: **Settings → Pages → Build and deployment → Source** →
    select **Deploy from a branch**, branch **main**, folder **/ (root)** → **Save**.
-3. Wait a minute or two, then visit
-   **https://aaronearlerichardson.github.io/website/** (note the
-   `/website/` path — see "A note on `baseurl`" above for why).
+3. Wait a minute or two, then visit **https://aaronearlerichardson.github.io**.
 
 ## Content maintenance notes
 
