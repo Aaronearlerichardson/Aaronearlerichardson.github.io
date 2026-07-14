@@ -782,6 +782,33 @@ main {
   color: var(--color-text);
 }
 
+/* ---------- Tensor-decomposition schematic (hand-authored SVG) ---------- */
+
+.tensor-schematic {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 620px;
+  margin: 0 auto;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: var(--color-bg);
+  padding: 0.75rem;
+}
+
+.ts-box-front { fill: var(--color-bg-subtle); stroke: var(--color-text-secondary); stroke-width: 1.5; }
+.ts-box-top { fill: var(--color-accent-light); stroke: var(--color-text-secondary); stroke-width: 1.5; }
+.ts-box-side { fill: var(--color-border); stroke: var(--color-text-secondary); stroke-width: 1.5; }
+.ts-weight { fill: var(--color-accent-dark); }
+.ts-slice { fill: var(--color-bg); stroke: var(--color-border); stroke-width: 1.5; }
+.ts-band--a { fill: var(--color-accent); opacity: 0.9; }
+.ts-band--b { fill: var(--color-accent); opacity: 0.55; }
+.ts-band--c { fill: var(--color-accent); opacity: 0.28; }
+.ts-op { fill: var(--color-text-secondary); font: 700 26px var(--font-heading); }
+.ts-op--sm { font-size: 18px; }
+.ts-label { fill: var(--color-text); font: 700 13px var(--font-body); }
+.ts-sub { fill: var(--color-text-secondary); font: 12px var(--font-body); }
+
 /* ---------- Section headings ---------- */
 
 .section-heading {

@@ -22,9 +22,41 @@ This is the largest thing I've built, and the source of most of my PyTorch
 and signal-processing experience: the analysis behind a first-author paper
 on how the brain turns a heard word into a spoken one.
 
-<figure class="figure figure--light">
-  <img src="{{ '/assets/images/ieeg-brain.png' | relative_url }}" width="983" height="737" alt="Semi-transparent 3D brain with depth-electrode contacts shown as colored bead strings and red surface-electrode spheres across the cortex — the kind of dense intracranial coverage the decomposition runs over.">
-  <figcaption>The substrate: intracranial electrodes across the cortical surface, localized and rendered with my <a href="{{ '/projects/ieeg-pipelines/' | relative_url }}">IEEG_Pipelines</a> package. The study pools this coverage across 31 patients (~1,600 electrodes).</figcaption>
+<figure class="figure">
+  <svg class="tensor-schematic" viewBox="0 0 620 216" role="img" aria-labelledby="tca-title tca-desc" xmlns="http://www.w3.org/2000/svg">
+    <title id="tca-title">sliceTCA tensor decomposition schematic</title>
+    <desc id="tca-desc">A three-dimensional data tensor of frequency by time by electrode is approximated as a sum of rank-one slice components, each a channel-weight vector multiplied by a shared time-frequency pattern.</desc>
+    <polygon class="ts-box-top" points="40,68 64,48 148,48 124,68"/>
+    <polygon class="ts-box-side" points="124,68 148,48 148,148 124,168"/>
+    <rect class="ts-box-front" x="40" y="68" width="84" height="100"/>
+    <text class="ts-label" x="82" y="190" text-anchor="middle">data tensor</text>
+    <text class="ts-sub" x="82" y="204" text-anchor="middle">freq × time × electrode</text>
+    <text class="ts-op" x="176" y="126" text-anchor="middle">&#8776;</text>
+    <g transform="translate(200,0)">
+      <rect class="ts-weight" x="0" y="76" width="16" height="84"/>
+      <text class="ts-op ts-op--sm" x="30" y="124" text-anchor="middle">×</text>
+      <rect class="ts-slice" x="44" y="76" width="66" height="84" rx="4"/>
+      <rect class="ts-band ts-band--a" x="50" y="86" width="54" height="12"/>
+      <rect class="ts-band ts-band--b" x="50" y="104" width="54" height="12"/>
+      <rect class="ts-band ts-band--c" x="50" y="122" width="54" height="12"/>
+      <rect class="ts-band ts-band--b" x="50" y="140" width="54" height="12"/>
+    </g>
+    <text class="ts-op" x="330" y="126" text-anchor="middle">+</text>
+    <g transform="translate(356,0)">
+      <rect class="ts-weight" x="0" y="76" width="16" height="84"/>
+      <text class="ts-op ts-op--sm" x="30" y="124" text-anchor="middle">×</text>
+      <rect class="ts-slice" x="44" y="76" width="66" height="84" rx="4"/>
+      <rect class="ts-band ts-band--b" x="50" y="86" width="54" height="12"/>
+      <rect class="ts-band ts-band--c" x="50" y="104" width="54" height="12"/>
+      <rect class="ts-band ts-band--a" x="50" y="122" width="54" height="12"/>
+      <rect class="ts-band ts-band--c" x="50" y="140" width="54" height="12"/>
+    </g>
+    <text class="ts-op" x="490" y="126" text-anchor="middle">+</text>
+    <text class="ts-op" x="524" y="122" text-anchor="middle">&#8943;</text>
+    <text class="ts-label" x="350" y="190" text-anchor="middle">rank-1 slice components</text>
+    <text class="ts-sub" x="350" y="204" text-anchor="middle">weights × time-frequency pattern</text>
+  </svg>
+  <figcaption>How sliceTCA factorizes the data: the frequency × time × electrode tensor is approximated as a sum of rank-one components, each a set of electrode weights times a shared time-frequency pattern — fit by gradient descent. (My own schematic of the general method; no figures from the manuscript appear on this site.)</figcaption>
 </figure>
 
 ## The question
