@@ -905,9 +905,12 @@ main {
 }
 
 /* Fixed-ratio box so cards line up in the grid whether or not a given
-   project has a thumbnail; the image/svg fills it via object-fit so
-   nothing is ever distorted. Background shows briefly while the image
-   decodes and behind any transparent source. */
+   project has a thumbnail. object-fit: contain (not cover) so a source
+   image whose native aspect isn't exactly 16:9 is never cropped —
+   any letterboxing is this box's own theme-aware background showing
+   through, not a color baked into the image, so it never mismatches
+   the card in light vs. dark mode. Background also shows briefly
+   while the image decodes and behind any transparent source. */
 .card__thumb {
   display: block;
   aspect-ratio: 16 / 9;
@@ -919,7 +922,7 @@ main {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .card__body {
