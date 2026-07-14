@@ -2,7 +2,7 @@
 title: "IEEG_Pipelines"
 summary: "Author and lead maintainer of the Cogan Lab's open-source iEEG/ECoG analysis toolkit — a PyPI package with CUDA kernels, Cython hot paths, and a parallel MATLAB API on its own CI."
 stack: [Python, MATLAB, Cython, CUDA]
-order: 8
+order: 1
 repo: https://github.com/coganlab/IEEG_Pipelines
 ---
 
