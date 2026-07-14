@@ -13,8 +13,11 @@ military use. The device uses a CO&#8322;-inflated air bladder with a
 without restricting the patient's mobility.
 
 <figure class="figure">
-  <img src="{{ '/assets/images/tourniquet-on-body.jpg' | relative_url }}" width="1237" height="695" alt="CAD render of the junctional tourniquet applied over the shoulder/axilla of a body model: a padded strap wraps the torso through a central pressure hub, with a secondary strap crossing over the shoulder to hold placement at the joint.">
-  <figcaption>CAD render of the device positioned over the axilla — the strap routes through a central pressure hub with an over-shoulder anchor, targeting the junctional bleed point a limb tourniquet can't reach.</figcaption>
+  <video controls loop muted playsinline preload="metadata" poster="{{ '/assets/images/tourniquet-anim-poster.jpg' | relative_url }}" width="1258" height="708">
+    <source src="{{ '/assets/video/tourniquet.mp4' | relative_url }}" type="video/mp4">
+    Your browser can't play this video — <a href="{{ '/assets/video/tourniquet.mp4' | relative_url }}">download the MP4</a>.
+  </video>
+  <figcaption>CAD animation of the device positioned over the axilla — the strap routes through a central pressure hub with an over-shoulder anchor, targeting the junctional bleed point a limb tourniquet can't reach.</figcaption>
 </figure>
 
 ## What made this a design-controls project, not just a prototype
