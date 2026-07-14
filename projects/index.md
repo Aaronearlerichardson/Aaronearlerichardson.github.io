@@ -2,14 +2,16 @@
 layout: default
 title: Projects
 permalink: /projects/
-summary: "Projects by Aaron Earle-Richardson: a BCI-relevant selection benchmark, a precision-engineered job crawler, and hand-rolled probability/signal tools."
+summary: "Projects by Aaron Earle-Richardson, spanning BCI benchmarking, clinical data systems, neuroimaging infrastructure, and hand-rolled probability/signal tools."
 ---
 
 <h1>Projects</h1>
-<p>A few things I've built outside the lab — same engineering habits show
-up in all of them: a benchmark for BCI-style selection interfaces, a
-job crawler built around a genuinely hard precision problem, and a pair
-of from-scratch probability and signal-processing tools.</p>
+<p>Things I've built outside formal job duties — a benchmark for
+BCI-style selection interfaces, a precision-engineered job crawler,
+clinical and neuroimaging data infrastructure, a spiking-neuron
+simulator, and a couple of from-scratch probability and signal-processing
+tools. The same engineering habits show up throughout: careful about
+what a system actually needs versus what it's tempting to build.</p>
 
 <ul class="project-grid">
   {% assign projects = site.projects | sort: 'order' %}

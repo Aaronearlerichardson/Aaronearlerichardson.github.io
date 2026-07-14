@@ -2,24 +2,25 @@
 layout: default
 title: About
 permalink: /about/
-summary: "Bio, education, and skills for Aaron Earle-Richardson — neural signal processing and BCI engineering at Duke."
+summary: "Bio, education, and skills for Aaron Earle-Richardson — neural signal processing and BCI engineering."
 ---
 
 <h1>About</h1>
 
 <p>
-  I'm a Scientific Data Manager in the <a href="https://github.com/coganlab">Cogan Lab</a>
-  at Duke University's Department of Neurology, where I build the decoding
-  pipelines and data infrastructure behind intracranial neuroscience
-  research aimed at speech brain-computer interfaces. I work day-to-day
-  with high-density &mu;ECoG arrays (up to 1024 channels) recorded
+  I'm a neural signal processing and BCI engineer with a background
+  building decoding pipelines and data infrastructure for intracranial
+  neuroscience research aimed at speech brain-computer interfaces. Most
+  recently, in the <a href="https://github.com/coganlab">Cogan Lab</a> at
+  Duke University's Department of Neurology, I worked day-to-day with
+  high-density &mu;ECoG arrays (up to 1024 channels) recorded
   intraoperatively at Duke University Medical Center, in collaboration
   with the Viventi Lab, under FDA Investigational Device Exemption and
   Duke IRB oversight.
 </p>
 
 <p>
-  I maintain <a href="https://ieeg-pipelines.readthedocs.io/en/latest/">IEEG_Pipelines</a>,
+  I built and maintained <a href="https://ieeg-pipelines.readthedocs.io/en/latest/">IEEG_Pipelines</a>,
   the lab's open-source iEEG/ECoG analysis stack (BIDS conversion, PHI
   removal for NWB/DANDI compliance, GPU-accelerated signal processing) —
   and, fittingly, this site's color palette and type are modeled directly
@@ -29,7 +30,7 @@ summary: "Bio, education, and skills for Aaron Earle-Richardson — neural signa
 <h2>Experience</h2>
 <ul class="timeline">
   <li>
-    <time>Jan 2025 – present</time>
+    <time>Jan 2025 – 2026</time>
     <strong>Scientific Data Manager I</strong> — Duke Department of Neurology (Cogan Lab).
     Lead data infrastructure for research under FDA IDE and Duke IRB oversight;
     maintain BIDS-standard systems with PHI removal for NWB/DANDI compliance;
@@ -47,7 +48,8 @@ summary: "Bio, education, and skills for Aaron Earle-Richardson — neural signa
     <time>May 2019 – Dec 2019</time>
     <strong>Lab Technician</strong> — Cornell Psychology Department.
     Built an AWS-deployed fMRI preprocessing server (BIDS format),
-    integrating FSL, AFNI, FreeSurfer, and ME-ICA via Python Nipype.
+    integrating FSL, AFNI, FreeSurfer, and ME-ICA via Python Nipype —
+    see <a href="{{ '/projects/cmrif-preprocess/' | relative_url }}">CMRIF Preprocess</a>.
   </li>
   <li>
     <time>Jan 2017 – May 2019</time>

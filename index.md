@@ -2,18 +2,18 @@
 layout: home
 title: null
 search_title: Home
-summary: "Neural signal processing and BCI engineering — PyTorch decoders, real-time signal processing, and data infrastructure for clinical brain-computer interface research at Duke."
+summary: "Neural signal processing and BCI engineering — PyTorch decoders, real-time signal processing, and data infrastructure for clinical brain-computer interface research."
 permalink: /
 ---
 
 <section class="hero">
-  <p class="hero__eyebrow">BCI &amp; Neural Signal Processing — Duke, Cogan Lab</p>
+  <p class="hero__eyebrow">BCI &amp; Neural Signal Processing</p>
   <h1>Aaron Earle-Richardson</h1>
   <p class="hero__lede">
     I build the software between raw neural signal and a working
     brain-computer interface — PyTorch decoders, real-time
     signal-processing pipelines, and the data infrastructure underneath
-    them — for FDA-regulated clinical BCI research at Duke.
+    them — for FDA-regulated clinical BCI research.
   </p>
   <div class="hero__actions">
     <a class="button" href="{{ '/projects/' | relative_url }}">See my projects</a>
@@ -28,7 +28,7 @@ permalink: /
   </div>
 
   <ul class="project-grid">
-    {% assign projects = site.projects | sort: 'order' %}
+    {% assign projects = site.projects | sort: 'order' | slice: 0, 3 %}
     {% for project in projects %}
     <li>
       <a class="card" href="{{ project.url | relative_url }}">
