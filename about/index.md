@@ -29,7 +29,8 @@ summary: "Bio, education, and skills for Aaron Earle-Richardson — neural signa
   recently, in the <a href="https://github.com/coganlab">Cogan Lab</a> at
   Duke University's Department of Neurology, I also worked with high-density
   &mu;ECoG arrays (up to 1024 channels) recorded intraoperatively at Duke
-  University Medical Center in collaboration with the Viventi Lab, under FDA
+  University Medical Center — a collaboration spanning Duke Neurology,
+  Neurosurgery, and the Viventi Lab's hardware engineering team, under FDA
   Investigational Device Exemption and Duke IRB oversight.
 </p>
 
@@ -37,8 +38,11 @@ summary: "Bio, education, and skills for Aaron Earle-Richardson — neural signa
   I built and maintained <a href="https://ieeg-pipelines.readthedocs.io/en/latest/">IEEG_Pipelines</a>,
   the lab's open-source iEEG/ECoG analysis stack (BIDS conversion, PHI
   removal for NWB/DANDI compliance, GPU-accelerated signal processing) —
-  and, fittingly, this site's color palette and type are modeled directly
-  on its documentation theme. This site is itself hand-built — no theme,
+  tested on every pull request across three OSes via GitHub Actions before
+  anything merges, with 1,243 of its 1,423 commits mine and the rest from
+  the co-maintainer I trained and other contributors — and, fittingly,
+  this site's color palette and type are modeled directly on its
+  documentation theme. This site is itself hand-built — no theme,
   no framework — including the search box above and the light/dark toggle;
   see the <a href="{{ '/colophon/' | relative_url }}">colophon</a> for how
   it's put together.
@@ -55,10 +59,12 @@ summary: "Bio, education, and skills for Aaron Earle-Richardson — neural signa
   <li>
     <time>Jan 2025 – Jun 2026</time>
     <strong>Scientific Data Manager I</strong> — Duke Department of Neurology (Cogan Lab).
-    Led data infrastructure for research under FDA IDE and Duke IRB oversight;
-    maintained BIDS-standard systems with PHI removal for NWB/DANDI compliance;
-    authored and version-controlled analysis pipelines; led the lab's migration
-    from MATLAB/Windows to a Python/Linux stack.
+    Led data infrastructure for research under FDA IDE and Duke IRB oversight,
+    coordinating across Duke Neurology, Neurosurgery, and the Viventi Lab's
+    hardware team; maintained BIDS-standard systems with PHI removal for
+    NWB/DANDI compliance; authored and version-controlled analysis pipelines;
+    led the lab's migration from MATLAB/Windows to a Python/Linux stack,
+    managing a live clinical pipeline cutover across the whole lab.
   </li>
   <li>
     <time>Apr 2021 – Dec 2024</time>

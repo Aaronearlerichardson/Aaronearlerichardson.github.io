@@ -46,7 +46,9 @@ The lab ran on MATLAB/Windows before this existed. Rather than a flag-day
 cutover, the package grew a parallel MATLAB API with its own CI so
 existing MATLAB-based analyses kept working while new work moved to
 Python/Linux — migrating the lab's tooling without stopping the lab's
-research in the process.
+research in the process, research that spans Duke Neurology, Neurosurgery,
+and the Viventi Lab's hardware side, all reading and writing through this
+same package.
 
 ## Built for the actual data volume
 
@@ -58,11 +60,16 @@ so the same code runs on CPU or GPU without a rewrite.
 
 ## Engineering practices
 
-Cross-platform CI (Windows/macOS/Linux) across Python 3.10–3.13, with a
-separate MATLAB CI on the latest release; Codecov coverage tracking;
-`pytest` with parametrized fixtures and doctest-modules; `pycodestyle` +
-`black`; trusted publishing to PyPI via GitHub Actions; ReadTheDocs-built
-documentation (the docs theme this site's palette is modeled on); MIT
-licensed and citable via `citation.cff`. Also trained lab members on the
-package and onboarded a co-maintainer, so it didn't depend on one person
-to keep running.
+Every push and pull request runs the real test suite before it merges:
+`pytest` across Windows/macOS/Ubuntu on Python 3.10–3.13 (parametrized
+fixtures, doctest-modules, `pycodestyle`), plus a separate MATLAB suite
+with JUnit test results and Cobertura coverage for the parts of the lab
+that hadn't migrated yet — all tracked in Codecov, formatted with `black`.
+It ships through pull-request review, not direct pushes to main: 90+
+merged PRs, with the co-maintainer I trained and other contributors'
+changes reviewed the same way mine are. 1,243 of the repo's 1,423 commits
+(across all branches) are mine. Nine tagged PyPI releases since April 2024
+(latest: 0.7.0) ship automatically off that same CI via GitHub's
+trusted-publishing flow — a version tag is the whole release process, no
+manual upload. ReadTheDocs-built documentation (the docs theme this
+site's palette is modeled on); MIT licensed and citable via `citation.cff`.
