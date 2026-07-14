@@ -18,7 +18,7 @@ what a system actually needs versus what it's tempting to build.</p>
   {% for project in projects %}
   <li>
     <a class="card" href="{{ project.url | relative_url }}">
-      <h3>{{ project.title }}</h3>
+      <h2>{{ project.title }}</h2>
       <p>{{ project.summary }}</p>
       {% if project.stack %}
       <ul class="tag-list" aria-label="Technologies used">

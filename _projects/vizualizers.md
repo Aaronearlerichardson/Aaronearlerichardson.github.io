@@ -1,5 +1,5 @@
 ---
-title: "Vizualizers"
+title: "Visualizers"
 summary: "Two small from-scratch tools for building probability and signal-processing intuition by hand — exact dice-pool distributions, and a live time-domain/frequency-domain wave explorer."
 stack: [Python, Tkinter, NumPy]
 order: 4

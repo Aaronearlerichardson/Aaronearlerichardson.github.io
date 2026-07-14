@@ -1,0 +1,21 @@
+[
+  { "path": "/", "label": "Home" },
+  { "path": "/about/", "label": "About" },
+  { "path": "/colophon/", "label": "Colophon" },
+  { "path": "/projects/", "label": "Projects (index)" },
+  { "path": "/projects/bids-coding/", "label": "Project: BIDS Coding" },
+  { "path": "/projects/bitrate-game/", "label": "Project: Bitrate Game" },
+  { "path": "/projects/cmrif-preprocess/", "label": "Project: CMRIF Preprocess" },
+  { "path": "/projects/eeg-earbud-auth/", "label": "Project: EEG Earbud Auth" },
+  { "path": "/projects/ieeg-pipelines/", "label": "Project: iEEG Pipelines" },
+  { "path": "/projects/jobs-crawler/", "label": "Project: Jobs Crawler" },
+  { "path": "/projects/junctional-tourniquet/", "label": "Project: Junctional Tourniquet" },
+  { "path": "/projects/kegg-cli/", "label": "Project: KEGG CLI" },
+  { "path": "/projects/matgrab/", "label": "Project: MatGrab" },
+  { "path": "/projects/neuron-sim/", "label": "Project: Neuron Sim" },
+  { "path": "/projects/self-insert-speculum/", "label": "Project: Self-Inserting Speculum" },
+  { "path": "/projects/server-gui-client/", "label": "Project: Server GUI Client" },
+  { "path": "/projects/speech-subprocesses/", "label": "Project: Speech Subprocesses (flagship)" },
+  { "path": "/projects/vizualizers/", "label": "Project: Vizualizers" },
+  { "path": "/404.html", "label": "404 page" }
+]

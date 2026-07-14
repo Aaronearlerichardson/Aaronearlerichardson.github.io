@@ -12,7 +12,10 @@ EEG data from a bedside device to the physician who needs to act on it,
 with a human in the loop at every handoff.
 
 <figure class="figure">
-  <img src="{{ '/assets/images/clinical-eeg-diagram.png' | relative_url }}" width="1280" height="720" alt="System data-flow: a bedside EEG trace (normal, pre-seizure, and seizure phases color-coded) raises an ALERT, which fans out to Save to Database, the Nurse's Station, and an Email to the attending physician, which links to a server-based 3D-brain review GUI; the loop returns to the patient.">
+  <picture>
+    <source srcset="{{ '/assets/images/clinical-eeg-diagram.webp' | relative_url }}" type="image/webp">
+    <img src="{{ '/assets/images/clinical-eeg-diagram.png' | relative_url }}" width="1280" height="720" loading="lazy" alt="System data-flow: a bedside EEG trace (normal, pre-seizure, and seizure phases color-coded) raises an ALERT, which fans out to Save to Database, the Nurse's Station, and an Email to the attending physician, which links to a server-based 3D-brain review GUI; the loop returns to the patient.">
+  </picture>
   <figcaption>The end-to-end workflow: a seizure-classified EEG trace triggers an alert that fans out to the database, the nurse's station, and an email to the attending — who opens a server-rendered 3D electrode-review GUI.</figcaption>
 </figure>
 

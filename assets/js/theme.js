@@ -15,7 +15,7 @@
   }
 
   syncButton(currentTheme());
-  toggle.hidden = false;
+  toggle.classList.remove("theme-toggle--init");
 
   toggle.addEventListener("click", function () {
     var next = currentTheme() === "dark" ? "light" : "dark";

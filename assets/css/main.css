@@ -387,6 +387,14 @@ main {
   cursor: pointer;
 }
 
+/* Reserves the button's box on first paint (rather than `hidden`, which
+   removes it from layout) so theme.js revealing it once JS confirms it can
+   run doesn't shift the search box / nav beside it — that reflow was
+   registered by Lighthouse as the page's single largest CLS contributor. */
+.theme-toggle--init {
+  visibility: hidden;
+}
+
 .theme-toggle:hover {
   border-color: var(--color-accent-dark);
   color: var(--color-accent-dark);
@@ -610,6 +618,28 @@ main {
   max-width: 60ch;
 }
 
+.hero__status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--color-text);
+  background: var(--color-bg-subtle);
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  padding: 0.5rem 1rem 0.5rem 0.75rem;
+  margin: 1.1rem 0 0;
+}
+
+.hero__status-dot {
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  background: var(--color-flash-correct);
+  flex-shrink: 0;
+}
+
 .hero__actions {
   display: flex;
   flex-wrap: wrap;
@@ -623,7 +653,12 @@ main {
   margin: 1.75rem 0;
 }
 
-.figure > img {
+.figure > picture {
+  display: block;
+}
+
+.figure > img,
+.figure > picture > img {
   display: block;
   width: 100%;
   height: auto;
@@ -650,7 +685,8 @@ main {
 /* Transparent PNGs (e.g. the electrode-brain render) need a fixed light
    backing so they read on both light and dark themes rather than
    disappearing into a dark page. */
-.figure--light > img {
+.figure--light > img,
+.figure--light > picture > img {
   background: #ffffff;
   padding: 1rem;
 }
@@ -861,6 +897,7 @@ main {
   box-shadow: 0 4px 14px var(--shadow-accent);
 }
 
+.card h2,
 .card h3 {
   margin: 0 0 0.5rem;
   color: var(--color-text);

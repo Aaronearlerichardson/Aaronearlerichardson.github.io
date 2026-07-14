@@ -26,10 +26,16 @@ echo 2) instead of hand-written glob patterns over a directory tree.
 
 <figure class="figure-row">
   <figure class="figure">
-    <img src="{{ '/assets/images/cmrif-create-image.png' | relative_url }}" width="1513" height="700" alt="AWS EC2 'Create Image' dialog capturing the preprocessing environment — root plus a 100 GiB data volume — into a reusable machine image.">
+    <picture>
+      <source srcset="{{ '/assets/images/cmrif-create-image.webp' | relative_url }}" type="image/webp">
+      <img src="{{ '/assets/images/cmrif-create-image.png' | relative_url }}" width="900" height="405" loading="lazy" alt="AWS EC2 'Create Image' dialog capturing the preprocessing environment — root plus a 100 GiB data volume — into a reusable machine image.">
+    </picture>
   </figure>
   <figure class="figure">
-    <img src="{{ '/assets/images/cmrif-ami.png' | relative_url }}" width="1085" height="640" alt="AWS console showing the resulting custom 'Base_Image' AMI, ready to launch on demand.">
+    <picture>
+      <source srcset="{{ '/assets/images/cmrif-ami.webp' | relative_url }}" type="image/webp">
+      <img src="{{ '/assets/images/cmrif-ami.png' | relative_url }}" width="900" height="467" loading="lazy" alt="AWS console showing the resulting custom 'Base_Image' AMI, ready to launch on demand.">
+    </picture>
   </figure>
   <figcaption>The MRI-optimized environment baked into a reusable AWS machine image (left) so any instance can spin it up ready-to-run (right) — the "disk image" piece of the pipeline.</figcaption>
 </figure>

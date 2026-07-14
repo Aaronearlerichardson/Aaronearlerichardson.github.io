@@ -1,0 +1,24 @@
+{
+  "name": "site-evaluator",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Real evaluator for aaronearlerichardson.github.io: Lighthouse + axe-core technical audit, ATS keyword coverage vs live neurotech postings, and a recruiter-lens rubric.",
+  "scripts": {
+    "fetch-precision-neuro": "node fetch-precision-neuro.mjs",
+    "extract-site-text": "node extract-site-text.mjs",
+    "audit": "node audit.mjs",
+    "analyze": "node analyze.mjs",
+    "report": "node build-report.mjs",
+    "all": "npm run audit && npm run extract-site-text && npm run fetch-precision-neuro && npm run analyze && npm run report",
+    "optimize-images": "node optimize-images.mjs",
+    "render-og-image": "node render-og-image.mjs"
+  },
+  "devDependencies": {
+    "axe-core": "^4.10.0",
+    "chrome-launcher": "^1.1.2",
+    "lighthouse": "^12.6.0",
+    "puppeteer-core": "^23.11.1",
+    "sharp": "^0.35.3"
+  }
+}

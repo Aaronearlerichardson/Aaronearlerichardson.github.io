@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Lato:wght@400;700&display=swap');
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1200px; height: 630px; overflow: hidden; }
+  body {
+    font-family: Lato, -apple-system, sans-serif;
+    background: linear-gradient(135deg, #eaf3fb 0%, #ffffff 55%, #f5f8fa 100%);
+    position: relative;
+  }
+  .waves {
+    position: absolute;
+    inset: 0;
+    opacity: 0.55;
+  }
+  .content {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 90px;
+  }
+  .eyebrow {
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #1f6391;
+    margin-bottom: 22px;
+  }
+  h1 {
+    font-family: "Roboto Slab", Georgia, serif;
+    font-weight: 700;
+    font-size: 72px;
+    color: #2b2f33;
+    line-height: 1.05;
+    margin-bottom: 24px;
+  }
+  p.tagline {
+    font-size: 30px;
+    color: #5a6470;
+    max-width: 880px;
+    line-height: 1.4;
+  }
+  .dot {
+    fill: #2980b9;
+  }
+  .dot--accent2 {
+    fill: #1f6391;
+  }
+</style>
+</head>
+<body>
+  <svg class="waves" width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+    <!-- Abstract iEEG/BCI motif: a signal trace with electrode contact dots along it -->
+    <path d="M -20 500 C 120 460, 200 540, 320 500 S 500 420, 620 470 S 800 560, 920 500 S 1080 430, 1220 480"
+          fill="none" stroke="#2980b9" stroke-width="3" opacity="0.5"/>
+    <path d="M -20 560 C 140 540, 260 600, 380 560 S 560 500, 680 540 S 860 610, 980 560 S 1140 500, 1220 550"
+          fill="none" stroke="#1f6391" stroke-width="2" opacity="0.35"/>
+    <circle class="dot" cx="320" cy="500" r="7"/>
+    <circle class="dot--accent2" cx="620" cy="470" r="7"/>
+    <circle class="dot" cx="920" cy="500" r="7"/>
+    <circle class="dot--accent2" cx="1080" cy="430" r="5"/>
+    <circle class="dot" cx="200" cy="540" r="5"/>
+    <path d="M -20 90 C 140 60, 260 120, 380 90 S 560 40, 680 80 S 860 130, 980 90"
+          fill="none" stroke="#2980b9" stroke-width="2" opacity="0.25"/>
+  </svg>
+  <div class="content">
+    <div class="eyebrow">Neural Signal Processing &amp; BCI Engineering</div>
+    <h1>Aaron Earle-Richardson</h1>
+    <p class="tagline">GPU-accelerated tensor decomposition, iEEG signal pipelines, and decoders for intracranial speech research.</p>
+  </div>
+</body>
+</html>

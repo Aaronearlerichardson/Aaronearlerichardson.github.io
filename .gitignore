@@ -7,3 +7,6 @@ vendor/
 Gemfile.lock
 .DS_Store
 .idea/
+tools/evaluate/node_modules/
+tools/evaluate/out/
+tools/evaluate/out-local/

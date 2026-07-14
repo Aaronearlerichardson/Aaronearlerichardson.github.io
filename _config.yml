@@ -20,6 +20,15 @@ author:
   github: Aaronearlerichardson
   linkedin: aaron-earle-richardson-781747184
 
+# Site-wide social share card (LinkedIn/Slack/Twitter link previews).
+# Original artwork rendered from tools/evaluate/og-image.html — not a
+# paper figure. jekyll-seo-tag's ImageDrop only reads a PAGE's own
+# `image` front matter (not a bare top-level site key), so the actual
+# image path is injected per-page via `defaults:` below; this just pins
+# the Twitter card layout to the large-image variant.
+twitter:
+  card: summary_large_image
+
 # Name of this GitHub repo — used to build the "view source" link in the
 # footer. Keep in sync with baseurl above.
 repo_name: Aaronearlerichardson.github.io
@@ -52,10 +61,12 @@ defaults:
       type: projects
     values:
       layout: project
+      image: /assets/images/og-card.png
   - scope:
       path: ""
     values:
       layout: default
+      image: /assets/images/og-card.png
 
 sass:
   style: compressed
@@ -66,3 +77,4 @@ exclude:
   - README.md
   - node_modules
   - vendor
+  - tools

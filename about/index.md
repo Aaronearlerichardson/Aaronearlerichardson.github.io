@@ -9,6 +9,16 @@ summary: "Bio, education, and skills for Aaron Earle-Richardson — neural signa
 
 <img class="about-portrait" src="{{ '/assets/images/aaron-headshot.jpg' | relative_url }}" width="400" height="400" alt="Portrait of Aaron Earle-Richardson">
 
+<p class="hero__status">
+  <span class="hero__status-dot" aria-hidden="true"></span>
+  Currently seeking neural signal processing / BCI engineering roles &mdash;
+  open to remote or the NC Research Triangle.
+</p>
+
+<p>
+  <a class="button" href="{{ '/assets/files/aaron-earle-richardson-resume.pdf' | relative_url }}" download>Download resume (PDF)</a>
+</p>
+
 <p>
   I'm a neural signal processing and BCI engineer. My largest project is a
   <a href="{{ '/projects/speech-subprocesses/' | relative_url }}">first-author
@@ -28,7 +38,10 @@ summary: "Bio, education, and skills for Aaron Earle-Richardson — neural signa
   the lab's open-source iEEG/ECoG analysis stack (BIDS conversion, PHI
   removal for NWB/DANDI compliance, GPU-accelerated signal processing) —
   and, fittingly, this site's color palette and type are modeled directly
-  on its documentation theme.
+  on its documentation theme. This site is itself hand-built — no theme,
+  no framework — including the search box above and the light/dark toggle;
+  see the <a href="{{ '/colophon/' | relative_url }}">colophon</a> for how
+  it's put together.
 </p>
 
 <p>
@@ -130,10 +143,10 @@ summary: "Bio, education, and skills for Aaron Earle-Richardson — neural signa
   </div>
   <div class="skill-group">
     <h3>Platforms</h3>
-    <p>GitHub CI/CD, GitHub/GitLab Pages, AWS, Linux, ReadTheDocs, Duke Compute Cluster</p>
+    <p>GitHub CI/CD, GitHub Pages, AWS, Linux, ReadTheDocs, Duke Compute Cluster</p>
   </div>
   <div class="skill-group">
-    <h3>Regulatory (academic exposure)</h3>
+    <h3>Regulatory</h3>
     <p>Design Controls (21 CFR 820.30), ISO 14971 risk management, predicate-based 510(k) strategy</p>
   </div>
 </div>

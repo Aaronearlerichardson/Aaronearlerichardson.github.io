@@ -18,7 +18,10 @@ enough to actually wear, rather than a lab-bench EEG cap.
 </figure>
 
 <figure class="figure">
-  <img src="{{ '/assets/images/earbud-in-ear.jpg' | relative_url }}" width="1920" height="1080" alt="CAD render of the finished earbud seated in a 3D model of a human ear, showing how the in-ear EEG sensor fits the ear canal.">
+  <picture>
+    <source srcset="{{ '/assets/images/earbud-in-ear.webp' | relative_url }}" type="image/webp">
+    <img src="{{ '/assets/images/earbud-in-ear.jpg' | relative_url }}" width="1400" height="788" loading="lazy" alt="CAD render of the finished earbud seated in a 3D model of a human ear, showing how the in-ear EEG sensor fits the ear canal.">
+  </picture>
   <figcaption>The assembled bud seated in the ear canal.</figcaption>
 </figure>
 

@@ -18,9 +18,15 @@ permalink: /
       resolving the parallel neural sub-processes that link hearing a word
       to saying it.
     </p>
+    <p class="hero__status">
+      <span class="hero__status-dot" aria-hidden="true"></span>
+      Currently seeking neural signal processing / BCI engineering roles &mdash;
+      open to remote or the NC Research Triangle.
+    </p>
     <div class="hero__actions">
       <a class="button" href="{{ '/projects/' | relative_url }}">See my projects</a>
       <a class="button button--ghost" href="{{ '/about/' | relative_url }}">More about me</a>
+      <a class="button button--ghost" href="{{ '/assets/files/aaron-earle-richardson-resume.pdf' | relative_url }}" download>Download resume (PDF)</a>
     </div>
   </div>
   <img class="hero__photo" src="{{ '/assets/images/aaron-headshot.jpg' | relative_url }}" width="400" height="400" alt="Portrait of Aaron Earle-Richardson">

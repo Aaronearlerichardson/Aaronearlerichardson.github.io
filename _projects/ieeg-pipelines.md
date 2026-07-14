@@ -15,7 +15,10 @@ that hadn't migrated yet. Full documentation lives at
 [ieeg-pipelines.readthedocs.io](https://ieeg-pipelines.readthedocs.io/en/latest/).
 
 <figure class="figure figure--light">
-  <img src="{{ '/assets/images/ieeg-brain.png' | relative_url }}" width="983" height="737" alt="Semi-transparent 3D render of a human brain with depth-electrode contacts shown as colored bead strings threading into the tissue and red surface-electrode spheres across the cortex.">
+  <picture>
+    <source srcset="{{ '/assets/images/ieeg-brain.webp' | relative_url }}" type="image/webp">
+    <img src="{{ '/assets/images/ieeg-brain.png' | relative_url }}" width="969" height="735" loading="lazy" alt="Semi-transparent 3D render of a human brain with depth-electrode contacts shown as colored bead strings threading into the tissue and red surface-electrode spheres across the cortex.">
+  </picture>
   <figcaption>3D electrode localization rendered with <code>ieeg.viz</code> — depth-electrode contacts (colored strings) and surface electrodes (red) plotted on a reconstructed cortical surface via the package's MNE-integrated plotting.</figcaption>
 </figure>
 
