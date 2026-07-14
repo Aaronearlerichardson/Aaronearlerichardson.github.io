@@ -10,15 +10,17 @@ summary: "Bio, education, and skills for Aaron Earle-Richardson — neural signa
 <img class="about-portrait" src="{{ '/assets/images/aaron-headshot.jpg' | relative_url }}" width="400" height="400" alt="Portrait of Aaron Earle-Richardson">
 
 <p>
-  I'm a neural signal processing and BCI engineer with a background
-  building decoding pipelines and data infrastructure for intracranial
-  neuroscience research aimed at speech brain-computer interfaces. Most
+  I'm a neural signal processing and BCI engineer. My largest project is a
+  <a href="{{ '/projects/speech-subprocesses/' | relative_url }}">first-author
+  study</a> on the neural sub-processes that link speech perception and
+  production — a PyTorch tensor decomposition (sliceTCA) over
+  intracranial-EEG recordings from 31 patients — and most of my PyTorch and
+  signal-processing experience comes from building and scaling it. Most
   recently, in the <a href="https://github.com/coganlab">Cogan Lab</a> at
-  Duke University's Department of Neurology, I worked day-to-day with
-  high-density &mu;ECoG arrays (up to 1024 channels) recorded
-  intraoperatively at Duke University Medical Center, in collaboration
-  with the Viventi Lab, under FDA Investigational Device Exemption and
-  Duke IRB oversight.
+  Duke University's Department of Neurology, I also worked with high-density
+  &mu;ECoG arrays (up to 1024 channels) recorded intraoperatively at Duke
+  University Medical Center in collaboration with the Viventi Lab, under FDA
+  Investigational Device Exemption and Duke IRB oversight.
 </p>
 
 <p>
@@ -80,34 +82,51 @@ summary: "Bio, education, and skills for Aaron Earle-Richardson — neural signa
   </li>
 </ul>
 
-<h2>Research &amp; publications</h2>
-<p>
-  First-author paper in preparation, <em>Neural sub-processes linking
-  speech perception and production</em> — a PyTorch decoder applying
-  unsupervised tensor decomposition (a fork of
-  <a href="https://github.com/Aaronearlerichardson/slicetca">sliceTCA</a>)
-  to iEEG recordings from patients undergoing pre-surgical intracranial
-  monitoring at Duke, in support of speech-prosthesis BCI development.
-  Presented at the Society for Neuroscience (2022–2024), Duke TBS
-  (2022–2023), and AAAS (2025), with additional co-authored posters at the
-  Cognitive Neuroscience Society (2024).
-</p>
+<h2>Publications &amp; presentations</h2>
+
+<p class="pub-lead"><strong>First-author manuscript (in preparation):</strong></p>
+<ul class="pub-list">
+  <li>
+    Earle-Richardson, A. M., Duraivel, K., Southwell, D., Sinha, S.,
+    Vestal, M., Grant, G., Zafar, M., &amp; Cogan, G. B.
+    <em>Neural sub-processes linking speech perception and production.</em>
+    <span class="pub-status">Manuscript in preparation</span> — presented as
+    posters at the Society for Neuroscience (2022–2024), Duke TBS
+    (2022–2023), and AAAS (2025).
+    <a href="{{ '/projects/speech-subprocesses/' | relative_url }}">Read more &rarr;</a>
+  </li>
+</ul>
+
+<p class="pub-lead"><strong>Selected co-authored presentations:</strong></p>
+<ul class="pub-list">
+  <li>
+    Sexton, D. P., Earle-Richardson, A. M., Southwell, D. G., Vestal, M., &amp;
+    Cogan, G. B. Decoding verbal working memory load from intracranial high
+    gamma activity. AAAS, 2025.
+  </li>
+  <li>
+    Zhang, J., Earle-Richardson, A. M., Southwell, D., Egner, T., &amp;
+    Cogan, G. B. Intracranial EEG correlates of concurrent demands on
+    cognitive stability and flexibility. Society for Neuroscience, 2024;
+    Cognitive Neuroscience Society, 2024.
+  </li>
+</ul>
 
 <h2>Skills</h2>
 <p>
-  Day to day the split is roughly: PyTorch and signal-processing work on
-  the decoding side, systems and data-infrastructure work underneath it,
-  and regulatory rigor whenever the work touches an actual implanted
-  device.
+  Day to day the split is: PyTorch and GPU work on the tensor-decomposition
+  side (sliceTCA), classical ML (PCA-LDA, scikit-learn) for the decoders,
+  and the high-gamma signal processing and data infrastructure underneath
+  both.
 </p>
 <div class="skill-groups">
   <div class="skill-group">
     <h3>Programming</h3>
-    <p>Python (PyTorch, MNE-Python, NumPy, SciPy, Nipype), C/C++, MATLAB, Bash, CUDA, HTML/Liquid, JavaScript</p>
+    <p>Python (PyTorch, MNE-Python, NumPy, SciPy, scikit-learn, Nipype), C/C++, MATLAB, Bash, CUDA, HTML/Liquid, JavaScript</p>
   </div>
   <div class="skill-group">
     <h3>Signal &amp; data</h3>
-    <p>iEEG/ECoG/EEG, fMRI/DTI, BIDS, NWB/DANDI, GPU-accelerated tensor methods, statistics</p>
+    <p>iEEG/ECoG/EEG, fMRI/DTI, high-gamma extraction, GPU-accelerated tensor decomposition (sliceTCA), time-resolved decoding, permutation statistics, BIDS, NWB/DANDI</p>
   </div>
   <div class="skill-group">
     <h3>Platforms</h3>

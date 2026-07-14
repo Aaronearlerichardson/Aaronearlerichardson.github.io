@@ -2,7 +2,7 @@
 title: "Job Crawler"
 summary: "A multi-source ATS crawler that finds neural-engineering roles by running one pipeline in two postures — relax the location, or relax the domain."
 stack: [Python, SQLite, "Claude API", "Gmail SMTP"]
-order: 8
+order: 9
 repo: https://github.com/Aaronearlerichardson/Jobs
 ---
 

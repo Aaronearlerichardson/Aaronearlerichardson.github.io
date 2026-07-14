@@ -2,7 +2,7 @@
 title: "Neuron Simulator"
 summary: "An object-oriented spiking-neuron network simulator — neurons and synapses as class instances, with a live graphical view of activation spreading through the network."
 stack: [Python, matplotlib]
-order: 6
+order: 7
 repo: https://github.com/Aaronearlerichardson/Neuron_sim
 demo: neuron
 ---

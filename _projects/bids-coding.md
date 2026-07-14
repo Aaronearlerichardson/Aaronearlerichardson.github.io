@@ -2,7 +2,7 @@
 title: "BIDS_coding"
 summary: "A configurable BIDS-conversion toolkit for the lab's iEEG datasets, with PHI removal built in for NWB/DANDI compliance."
 stack: [Python, BIDS, Nipype]
-order: 9
+order: 10
 repo: https://github.com/coganlab/BIDS_coding
 ---
 

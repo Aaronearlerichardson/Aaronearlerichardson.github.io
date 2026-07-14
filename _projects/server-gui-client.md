@@ -2,7 +2,7 @@
 title: "Clinical EEG Alert System"
 summary: "A client/server system that routes EEG data from bedside to database to a physician, with a 3D electrode-review GUI at the end of the chain."
 stack: [Python, Flask, Tkinter, MNE]
-order: 4
+order: 5
 repo: https://github.com/Aaronearlerichardson/Server_gui_client
 ---
 

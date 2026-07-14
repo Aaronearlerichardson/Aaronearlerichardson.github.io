@@ -2,7 +2,7 @@
 title: "Junctional Tourniquet"
 summary: "A patented, fast-deploy pneumatic tourniquet for junctional hemorrhage — a full four-semester medical device design-controls project, not just a prototype."
 stack: ["Fusion 360", "Design Controls", "ISO 14971"]
-order: 10
+order: 11
 ---
 
 A six-person Duke engineering team project to design a tourniquet for

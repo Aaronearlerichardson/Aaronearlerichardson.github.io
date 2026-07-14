@@ -2,7 +2,7 @@
 title: "kegg-cli"
 summary: "A command-line pathfinder over the KEGG biochemical database — depth-first search for the shortest reaction path between two compounds."
 stack: [Python]
-order: 12
+order: 13
 repo: https://github.com/Shaumik-Ashraf/kegg-cli
 ---
 

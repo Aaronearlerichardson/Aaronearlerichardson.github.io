@@ -2,7 +2,7 @@
 title: "GridQuest"
 summary: "A spatial-selection input game that measures achieved information transfer rate the way BCI decoders are benchmarked."
 stack: [Python, Pygame, Nuitka]
-order: 2
+order: 3
 repo: https://github.com/Aaronearlerichardson/bitrate_game
 demo: gridquest
 ---

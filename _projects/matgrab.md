@@ -2,7 +2,7 @@
 title: "matgrab"
 summary: "A small PyPI package that pulls named variables out of MATLAB .mat files — however deeply nested — straight into a pandas DataFrame."
 stack: [Python, pandas, SciPy]
-order: 7
+order: 8
 repo: https://github.com/Aaronearlerichardson/matgrab
 ---
 
