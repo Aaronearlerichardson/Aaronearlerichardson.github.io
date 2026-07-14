@@ -8,9 +8,16 @@ repo: https://github.com/coganlab/IEEG_Pipelines
 
 The lab's entire intracranial-EEG analysis stack, built and maintained from
 the ground up: BIDS-native loading, signal processing, statistics, decoding,
-and visualization, distributed as `pip install ieeg` with a parallel
+and visualization, distributed on PyPI as
+[`pip install ieeg`](https://pypi.org/project/ieeg/) with a parallel
 MATLAB API kept alive on its own independent CI for the parts of the lab
-that hadn't migrated yet.
+that hadn't migrated yet. Full documentation lives at
+[ieeg-pipelines.readthedocs.io](https://ieeg-pipelines.readthedocs.io/en/latest/).
+
+<figure class="figure figure--light">
+  <img src="{{ '/assets/images/ieeg-brain.png' | relative_url }}" width="983" height="737" alt="Semi-transparent 3D render of a human brain with depth-electrode contacts shown as colored bead strings threading into the tissue and red surface-electrode spheres across the cortex.">
+  <figcaption>3D electrode localization rendered with <code>ieeg.viz</code> — depth-electrode contacts (colored strings) and surface electrodes (red) plotted on a reconstructed cortical surface via the package's MNE-integrated plotting.</figcaption>
+</figure>
 
 ## What's in the package
 

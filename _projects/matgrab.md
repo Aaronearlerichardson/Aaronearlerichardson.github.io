@@ -25,7 +25,8 @@ finds into a single DataFrame — accepting a single file, a directory of
 files, or a list of either, so a whole directory of subject `.mat` files
 can be pulled into one call.
 
-Packaged properly rather than left as a script: published on PyPI
-(`pip install matgrab`), with a real test suite, `setup.py`/`pyproject.toml`,
+Packaged properly rather than left as a script: published on
+[PyPI](https://pypi.org/project/matgrab/) (`pip install matgrab`), with a
+real test suite, `setup.py`/`pyproject.toml`,
 and the standard `CONTRIBUTING.md`/`CODE_OF_CONDUCT.md` pair — small in
 scope, but shipped like a real library rather than a personal script.

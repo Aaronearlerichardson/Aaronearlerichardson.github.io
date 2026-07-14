@@ -7,6 +7,8 @@ summary: "Bio, education, and skills for Aaron Earle-Richardson — neural signa
 
 <h1>About</h1>
 
+<img class="about-portrait" src="{{ '/assets/images/aaron-headshot.jpg' | relative_url }}" width="400" height="400" alt="Portrait of Aaron Earle-Richardson">
+
 <p>
   I'm a neural signal processing and BCI engineer with a background
   building decoding pipelines and data infrastructure for intracranial

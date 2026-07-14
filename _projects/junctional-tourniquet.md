@@ -12,6 +12,11 @@ military use. The device uses a CO&#8322;-inflated air bladder with a
 360-degree strap adjustment system, designed to apply in under 30 seconds
 without restricting the patient's mobility.
 
+<figure class="figure">
+  <img src="{{ '/assets/images/tourniquet-on-body.jpg' | relative_url }}" width="1237" height="695" alt="CAD render of the junctional tourniquet applied over the shoulder/axilla of a body model: a padded strap wraps the torso through a central pressure hub, with a secondary strap crossing over the shoulder to hold placement at the joint.">
+  <figcaption>CAD render of the device positioned over the axilla — the strap routes through a central pressure hub with an over-shoulder anchor, targeting the junctional bleed point a limb tourniquet can't reach.</figcaption>
+</figure>
+
 ## What made this a design-controls project, not just a prototype
 
 The point of the course was running an actual Class II medical device

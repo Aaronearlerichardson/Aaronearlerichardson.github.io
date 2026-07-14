@@ -82,4 +82,6 @@ the scoring or session logic.
 
 Standalone binaries are built per-OS with Nuitka through a GitHub Actions
 build matrix — Nuitka doesn't cross-compile, so each target OS builds its
-own binary rather than being cross-built from one runner.
+own binary rather than being cross-built from one runner. Prefer the real
+thing over the in-browser port above? **[Download a native build](https://github.com/Aaronearlerichardson/bitrate_game/releases)**
+for macOS, Windows, or Linux from the releases page.

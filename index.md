@@ -7,18 +7,21 @@ permalink: /
 ---
 
 <section class="hero">
-  <p class="hero__eyebrow">BCI &amp; Neural Signal Processing</p>
-  <h1>Aaron Earle-Richardson</h1>
-  <p class="hero__lede">
-    I build the software between raw neural signal and a working
-    brain-computer interface — PyTorch decoders, real-time
-    signal-processing pipelines, and the data infrastructure underneath
-    them — for FDA-regulated clinical BCI research.
-  </p>
-  <div class="hero__actions">
-    <a class="button" href="{{ '/projects/' | relative_url }}">See my projects</a>
-    <a class="button button--ghost" href="{{ '/about/' | relative_url }}">More about me</a>
+  <div class="hero__text">
+    <p class="hero__eyebrow">BCI &amp; Neural Signal Processing</p>
+    <h1>Aaron Earle-Richardson</h1>
+    <p class="hero__lede">
+      I build the software between raw neural signal and a working
+      brain-computer interface — PyTorch decoders, real-time
+      signal-processing pipelines, and the data infrastructure underneath
+      them — for FDA-regulated clinical BCI research.
+    </p>
+    <div class="hero__actions">
+      <a class="button" href="{{ '/projects/' | relative_url }}">See my projects</a>
+      <a class="button button--ghost" href="{{ '/about/' | relative_url }}">More about me</a>
+    </div>
   </div>
+  <img class="hero__photo" src="{{ '/assets/images/aaron-headshot.jpg' | relative_url }}" width="400" height="400" alt="Portrait of Aaron Earle-Richardson">
 </section>
 
 <section aria-labelledby="featured-heading">
