@@ -11,25 +11,25 @@ sitemap: false
   {
     "title": {{ p.title | jsonify }},
     "url": {{ p.url | relative_url | jsonify }},
-    "summary": {{ p.summary | default: "" | jsonify }},
+    "summary": {{ p.description | default: "" | jsonify }},
     "tags": {{ p.stack | default: empty | jsonify }},
     "body": {{ p.content | strip_html | strip_newlines | truncate: 600 | jsonify }},
     "section": "Project"
   }
 {%- endfor -%}
-{%- comment -%} Only our hand-authored pages set `summary`; this also
+{%- comment -%} Only our hand-authored pages set `description`; this also
    excludes generated pages (sitemap.xml, robots.txt, this file itself)
    without needing to enumerate them by URL. {%- endcomment -%}
-{%- assign static_pages = site.pages | where_exp: "item", "item.summary" -%}
+{%- assign static_pages = site.pages | where_exp: "item", "item.description" -%}
 {%- for p in static_pages -%}
   {%- unless first -%},{%- endunless -%}
   {%- assign first = false -%}
   {
     "title": {{ p.search_title | default: p.title | default: site.title | jsonify }},
     "url": {{ p.url | relative_url | jsonify }},
-    "summary": {{ p.summary | default: "" | jsonify }},
+    "summary": {{ p.description | default: "" | jsonify }},
     "tags": [],
-    "body": {{ p.summary | default: "" | jsonify }},
+    "body": {{ p.description | default: "" | jsonify }},
     "section": "Page"
   }
 {%- endfor -%}

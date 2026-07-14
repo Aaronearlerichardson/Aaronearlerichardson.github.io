@@ -2,7 +2,7 @@
 layout: default
 title: Colophon
 permalink: /colophon/
-summary: "How this site is built: hand-rolled search, the light/dark theme system, accessibility work, and how it ships — no theme, no framework, no build step beyond Jekyll itself."
+description: "How this site is built: hand-rolled search, the light/dark theme system, accessibility work, and how it ships — no theme, no framework, no build step beyond Jekyll itself."
 ---
 
 <h1>Colophon</h1>

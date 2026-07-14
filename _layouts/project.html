@@ -11,7 +11,7 @@
     <header class="project-header">
       <p class="hero__eyebrow"><a href="{{ '/projects/' | relative_url }}" style="color:inherit;text-decoration:none;">&larr; Projects</a></p>
       <h1>{{ page.title }}</h1>
-      {% if page.summary %}<p class="project-header__meta">{{ page.summary }}</p>{% endif %}
+      {% if page.description %}<p class="project-header__meta">{{ page.description }}</p>{% endif %}
       {% if page.stack %}
       <ul class="tag-list" aria-label="Technologies used">
         {% for item in page.stack %}<li class="tag">{{ item }}</li>{% endfor %}

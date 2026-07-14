@@ -4,9 +4,11 @@ import fs from "node:fs";
 import * as chromeLauncher from "chrome-launcher";
 import puppeteer from "puppeteer-core";
 
-const BASE = "https://aaronearlerichardson.github.io";
+const BASE = process.env.BASE_URL || "https://aaronearlerichardson.github.io";
 const CHROME_PATH = "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe";
 const pages = JSON.parse(fs.readFileSync("pages.json", "utf8"));
+const OUT_PATH = process.env.BASE_URL ? "out-local/site-text.json" : "out/site-text.json";
+fs.mkdirSync(process.env.BASE_URL ? "out-local" : "out", { recursive: true });
 
 async function main() {
   const chrome = await chromeLauncher.launch({
@@ -25,8 +27,8 @@ async function main() {
     console.error(`${p.path}: ${text.length} chars`);
   }
 
-  fs.writeFileSync("out/site-text.json", JSON.stringify(results, null, 2));
-  console.error(`Wrote out/site-text.json`);
+  fs.writeFileSync(OUT_PATH, JSON.stringify(results, null, 2));
+  console.error(`Wrote ${OUT_PATH}`);
 
   await browser.disconnect();
   try { await chrome.kill(); } catch {}

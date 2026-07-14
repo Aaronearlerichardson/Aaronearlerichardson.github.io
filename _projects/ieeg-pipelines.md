@@ -1,6 +1,6 @@
 ---
 title: "IEEG_Pipelines"
-summary: "Author and lead maintainer of the Cogan Lab's open-source iEEG/ECoG analysis toolkit — a PyPI package with CUDA kernels, Cython hot paths, and a parallel MATLAB API on its own CI."
+description: "Author and lead maintainer of the Cogan Lab's open-source iEEG/ECoG analysis toolkit — a PyPI package with CUDA kernels, Cython hot paths, and a parallel MATLAB API on its own CI."
 stack: [Python, MATLAB, Cython, CUDA]
 order: 2
 repo: https://github.com/coganlab/IEEG_Pipelines
@@ -46,9 +46,7 @@ The lab ran on MATLAB/Windows before this existed. Rather than a flag-day
 cutover, the package grew a parallel MATLAB API with its own CI so
 existing MATLAB-based analyses kept working while new work moved to
 Python/Linux — migrating the lab's tooling without stopping the lab's
-research in the process, research that spans Duke Neurology, Neurosurgery,
-and the Viventi Lab's hardware side, all reading and writing through this
-same package.
+research in the process.
 
 ## Built for the actual data volume
 
@@ -65,10 +63,11 @@ Every push and pull request runs the real test suite before it merges:
 fixtures, doctest-modules, `pycodestyle`), plus a separate MATLAB suite
 with JUnit test results and Cobertura coverage for the parts of the lab
 that hadn't migrated yet — all tracked in Codecov, formatted with `black`.
-It ships through pull-request review, not direct pushes to main: 90+
-merged PRs, with the co-maintainer I trained and other contributors'
+It ships through code review on pull requests, not direct pushes to main:
+90+ merged PRs, with the co-maintainer I trained and other contributors'
 changes reviewed the same way mine are. 1,243 of the repo's 1,423 commits
-(across all branches) are mine. Nine tagged PyPI releases since April 2024
+(across all branches, version-controlled in Git) are mine. Nine tagged
+PyPI releases since April 2024
 (latest: 0.7.0) ship automatically off that same CI via GitHub's
 trusted-publishing flow — a version tag is the whole release process, no
 manual upload. ReadTheDocs-built documentation (the docs theme this

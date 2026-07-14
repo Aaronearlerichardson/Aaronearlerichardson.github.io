@@ -1,6 +1,6 @@
 ---
 title: "Neural Sub-Processes of Speech"
-summary: "First-author iEEG study resolving the parallel neural sub-processes that link hearing a word to saying it — using a GPU-accelerated PyTorch tensor decomposition (sliceTCA) over intracranial recordings from 31 patients."
+description: "First-author iEEG study resolving the parallel neural sub-processes that link hearing a word to saying it — using a GPU-accelerated PyTorch tensor decomposition (sliceTCA) over intracranial recordings from 31 patients."
 stack: [PyTorch, CUDA, iEEG, sliceTCA]
 order: 1
 repo: https://github.com/coganlab/SentenceRep_analysis

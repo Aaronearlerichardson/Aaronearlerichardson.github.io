@@ -1,3 +1,9 @@
+---
+# Front matter (even empty) is what tells Jekyll to run this file through
+# its Sass converter — renamed from main.css so the `sass: style:
+# compressed` setting in _config.yml actually applies to it and the
+# comments below survive in source while the shipped output is minified.
+---
 /* ---------------------------------------------------------------------
    Aaron Earle-Richardson — portfolio stylesheet
    Hand-written, no framework. Palette/type modeled on the Read the Docs
@@ -163,12 +169,12 @@ h4 {
 }
 
 h1 {
-  font-size: clamp(1.9rem, 1.5rem + 1.6vw, 2.75rem);
+  font-size: clamp(1.9rem, calc(1.5rem + 1.6vw), 2.75rem);
   margin-top: 0;
 }
 
 h2 {
-  font-size: clamp(1.4rem, 1.2rem + 0.8vw, 1.75rem);
+  font-size: clamp(1.4rem, calc(1.2rem + 0.8vw), 1.75rem);
 }
 
 h3 {
@@ -784,7 +790,7 @@ main {
 
 .flagship__title {
   margin: 0 0 0.6rem;
-  font-size: clamp(1.4rem, 1.2rem + 0.9vw, 1.9rem);
+  font-size: clamp(1.4rem, calc(1.2rem + 0.9vw), 1.9rem);
 }
 
 .flagship__title a {

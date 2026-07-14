@@ -2,7 +2,7 @@
 layout: default
 title: About
 permalink: /about/
-summary: "Bio, education, and skills for Aaron Earle-Richardson — neural signal processing and BCI engineering."
+description: "Bio, education, and skills for Aaron Earle-Richardson — neural signal processing and BCI engineering."
 ---
 
 <h1>About</h1>
@@ -37,12 +37,16 @@ summary: "Bio, education, and skills for Aaron Earle-Richardson — neural signa
 <p>
   I built and maintained <a href="https://ieeg-pipelines.readthedocs.io/en/latest/">IEEG_Pipelines</a>,
   the lab's open-source iEEG/ECoG analysis stack (BIDS conversion, PHI
-  removal for NWB/DANDI compliance, GPU-accelerated signal processing) —
-  tested on every pull request across three OSes via GitHub Actions before
-  anything merges, with 1,243 of its 1,423 commits mine and the rest from
-  the co-maintainer I trained and other contributors — and, fittingly,
-  this site's color palette and type are modeled directly on its
-  documentation theme. This site is itself hand-built — no theme,
+  removal for NWB/DANDI compliance, GPU-accelerated signal processing).
+  Every change ships through code review on pull requests, tested across
+  three OSes via GitHub Actions before merging; 1,243 of its 1,423 commits
+  are mine, version-controlled in Git alongside the co-maintainer I trained
+  and other contributors. Fittingly, this site's color palette and type
+  are modeled directly on its documentation theme.
+</p>
+
+<p>
+  This site is itself hand-built — no theme,
   no framework — including the search box above and the light/dark toggle;
   see the <a href="{{ '/colophon/' | relative_url }}">colophon</a> for how
   it's put together.
@@ -59,9 +63,8 @@ summary: "Bio, education, and skills for Aaron Earle-Richardson — neural signa
   <li>
     <time>Jan 2025 – Jun 2026</time>
     <strong>Scientific Data Manager I</strong> — Duke Department of Neurology (Cogan Lab).
-    Led data infrastructure for research under FDA IDE and Duke IRB oversight,
-    coordinating across Duke Neurology, Neurosurgery, and the Viventi Lab's
-    hardware team; maintained BIDS-standard systems with PHI removal for
+    Led data infrastructure for research under FDA IDE and Duke IRB oversight;
+    maintained BIDS-standard systems with PHI removal for
     NWB/DANDI compliance; authored and version-controlled analysis pipelines;
     led the lab's migration from MATLAB/Windows to a Python/Linux stack,
     managing a live clinical pipeline cutover across the whole lab.
@@ -70,8 +73,9 @@ summary: "Bio, education, and skills for Aaron Earle-Richardson — neural signa
     <time>Apr 2021 – Dec 2024</time>
     <strong>Research Technician II</strong> — Duke Department of Neurology (Cogan Lab).
     Converted lab data systems to the BIDS standard; built new ECoG/iEEG
-    analysis pipelines; supported intracranial recording research across
-    Duke Neurology, Neurosurgery, and the Viventi Lab.
+    analysis pipelines; supported intracranial recording research through
+    that same cross-functional collaboration — clinical, surgical, and
+    hardware engineering — described above.
   </li>
   <li>
     <time>May 2019 – Dec 2019</time>

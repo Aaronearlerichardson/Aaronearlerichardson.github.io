@@ -1,6 +1,6 @@
 ---
 title: "Self-Inserting Speculum"
-summary: "A medical-device redesign of the vaginal speculum around patient comfort — a device the patient inserts and controls herself, rather than a cold, provider-operated instrument."
+description: "A medical-device redesign of the vaginal speculum around patient comfort — a device the patient inserts and controls herself, rather than a cold, provider-operated instrument."
 stack: [CAD, "Medical Device Design", "Human Factors"]
 order: 13
 ---

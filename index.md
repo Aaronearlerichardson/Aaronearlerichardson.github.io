@@ -2,7 +2,7 @@
 layout: home
 title: null
 search_title: Home
-summary: "Neural signal processing and BCI engineering — GPU-accelerated tensor decomposition in PyTorch, the high-gamma pipeline that feeds it, and decoders for intracranial-EEG speech research."
+description: "Neural signal processing and BCI engineering — GPU-accelerated tensor decomposition in PyTorch, the high-gamma pipeline that feeds it, and decoders for intracranial-EEG speech research."
 permalink: /
 ---
 
@@ -38,7 +38,7 @@ permalink: /
   <h2 id="flagship-heading" class="flagship__title">
     <a href="{{ flagship.url | relative_url }}">{{ flagship.title }}</a>
   </h2>
-  <p class="flagship__summary">{{ flagship.summary }}</p>
+  <p class="flagship__summary">{{ flagship.description }}</p>
   <p class="flagship__meta">Manuscript in preparation · sliceTCA tensor decomposition in PyTorch · iEEG from 31 patients</p>
   <a class="button" href="{{ flagship.url | relative_url }}">Read about the research</a>
 </section>
@@ -55,7 +55,7 @@ permalink: /
     <li>
       <a class="card" href="{{ project.url | relative_url }}">
         <h3>{{ project.title }}</h3>
-        <p>{{ project.summary }}</p>
+        <p>{{ project.description }}</p>
         {% if project.stack %}
         <ul class="tag-list" aria-label="Technologies used">
           {% for item in project.stack %}<li class="tag">{{ item }}</li>{% endfor %}

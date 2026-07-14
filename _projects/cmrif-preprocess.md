@@ -1,6 +1,6 @@
 ---
 title: "CMRIF Preprocess"
-summary: "A BIDS-aware fMRI preprocessing pipeline that lets you mix and match tools across FSL, AFNI, FreeSurfer, and ME-ICA instead of committing to one package's whole stack."
+description: "A BIDS-aware fMRI preprocessing pipeline that lets you mix and match tools across FSL, AFNI, FreeSurfer, and ME-ICA instead of committing to one package's whole stack."
 stack: [Python, Nipype, BIDS, AWS]
 order: 6
 repo: https://github.com/Aaronearlerichardson/CMRIF_preprocess

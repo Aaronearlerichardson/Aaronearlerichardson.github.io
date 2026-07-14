@@ -2,7 +2,7 @@
 layout: default
 title: Projects
 permalink: /projects/
-summary: "Projects by Aaron Earle-Richardson, spanning BCI benchmarking, clinical data systems, neuroimaging infrastructure, and hand-rolled probability/signal tools."
+description: "Projects by Aaron Earle-Richardson, spanning BCI benchmarking, clinical data systems, neuroimaging infrastructure, and hand-rolled probability/signal tools."
 ---
 
 <h1>Projects</h1>
@@ -19,7 +19,7 @@ what a system actually needs versus what it's tempting to build.</p>
   <li>
     <a class="card" href="{{ project.url | relative_url }}">
       <h2>{{ project.title }}</h2>
-      <p>{{ project.summary }}</p>
+      <p>{{ project.description }}</p>
       {% if project.stack %}
       <ul class="tag-list" aria-label="Technologies used">
         {% for item in project.stack %}<li class="tag">{{ item }}</li>{% endfor %}

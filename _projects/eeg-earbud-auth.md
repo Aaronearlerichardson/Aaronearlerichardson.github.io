@@ -1,6 +1,6 @@
 ---
 title: "EEG Earbud Biometric Authentication"
-summary: "An in-ear EEG device for personal identification, small enough to fit inside an earbud — led the team through a classical-ML classifier and its transition to deep learning."
+description: "An in-ear EEG device for personal identification, small enough to fit inside an earbud — led the team through a classical-ML classifier and its transition to deep learning."
 stack: [MATLAB, Machine Learning]
 order: 12
 ---
