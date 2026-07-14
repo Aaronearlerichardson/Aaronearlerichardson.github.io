@@ -3,6 +3,7 @@ title: "Vizualizers"
 summary: "Two small from-scratch tools for building probability and signal-processing intuition by hand — exact dice-pool distributions, and a live time-domain/frequency-domain wave explorer."
 stack: [Python, Tkinter, NumPy]
 order: 3
+demo: dice
 ---
 
 Two small desktop tools that build intuition for ideas I use professionally
@@ -37,6 +38,33 @@ a `Canvas` — no charting library — as a bar chart with the mean marked by a
 vertical line and a 90% confidence interval overlaid as a dashed
 double-headed arrow, all positioned and drawn by hand from the computed
 outcome/probability pairs.
+
+### Try it
+
+This is a from-scratch JavaScript port of the same `roll`/`multi_roll`/
+`convolve` functions and the same canvas drawing — not the Tkinter app
+itself (that can't run in a browser), but the identical math, rebuilt for
+the web.
+
+<div class="demo-shell">
+  <span class="demo-shell__label">Live demo — dice probability roller</span>
+  <div class="dice-demo" data-demo="dice">
+    <div class="dice-demo__rows">
+      <div class="dice-row">
+        <label>Sides<input type="number" class="dice-row__sides" min="2" max="100" value="6" aria-label="Number of sides, die 1"></label>
+        <label>Count<input type="number" class="dice-row__count" min="1" max="20" value="2" aria-label="Number of dice, die 1"></label>
+      </div>
+    </div>
+    <div class="dice-demo__controls">
+      <button type="button" class="button button--ghost dice-demo__add">+ Add die</button>
+      <button type="button" class="button button--ghost dice-demo__remove">&minus; Remove die</button>
+      <button type="button" class="button dice-demo__roll">Roll</button>
+    </div>
+    <p class="dice-demo__warning" hidden></p>
+    <canvas class="dice-demo__canvas" width="640" height="280" role="img" aria-label="Bar chart of the combined dice pool's outcome probabilities, with the mean and 90% confidence interval overlaid"></canvas>
+    <p class="dice-demo__stats" aria-live="polite"></p>
+  </div>
+</div>
 
 ## Wave & Fourier transform visualizer
 

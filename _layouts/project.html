@@ -53,5 +53,10 @@
 {% include footer.html %}
 <script defer src="{{ '/assets/js/theme.js' | relative_url }}"></script>
 <script defer src="{{ '/assets/js/search.js' | relative_url }}"></script>
+{% if page.demo == "dice" %}
+<script defer src="{{ '/assets/js/dice-demo.js' | relative_url }}"></script>
+{% elsif page.demo == "gridquest" %}
+<script defer src="{{ '/assets/js/gridquest-demo.js' | relative_url }}"></script>
+{% endif %}
 </body>
 </html>

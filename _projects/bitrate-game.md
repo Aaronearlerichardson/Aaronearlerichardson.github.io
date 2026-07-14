@@ -4,6 +4,7 @@ summary: "A spatial-selection input game that measures achieved information tran
 stack: [Python, Pygame, Nuitka]
 order: 2
 repo: https://github.com/Aaronearlerichardson/bitrate_game
+demo: gridquest
 ---
 
 ## What it measures
@@ -30,6 +31,34 @@ and the inner position, so the same nine keys carry both stages of the
 selection and the motor vocabulary stays tiny. Cues are drawn i.i.d.
 uniform — no language model, no letter frequencies, no locale bias — so
 the paradigm generalizes past any one alphabet.
+
+### Try it
+
+A from-scratch JS/DOM port of the same session state machine, selection
+logic, and bit-rate formula — not the Pygame binary itself (that can't run
+in a browser), but exactly the rules described above. Click the board or
+**Start practice**, then use `Q W E / A S D / Z X C` on your keyboard (tile
+clicks work too). **Start scored run** runs the real 60-second timed
+benchmark, countdown included.
+
+<div class="demo-shell">
+  <span class="demo-shell__label">Live demo — GridQuest</span>
+  <div class="gq-demo" data-demo="gridquest">
+    <div class="gq-demo__hud">
+      <div class="gq-demo__bitrate"></div>
+      <div class="gq-demo__timer"></div>
+    </div>
+    <div class="gq-demo__board" role="group" aria-label="GridQuest selection board"></div>
+    <p class="gq-demo__message"></p>
+    <p class="visually-hidden gq-demo__status" role="status" aria-live="polite"></p>
+    <div class="gq-demo__controls">
+      <button type="button" class="button gq-demo__practice">Start practice</button>
+      <button type="button" class="button button--ghost gq-demo__scored">Start scored run (60s)</button>
+      <button type="button" class="button button--ghost gq-demo__menu">Back to menu</button>
+    </div>
+    <div class="gq-demo__results" hidden></div>
+  </div>
+</div>
 
 ## Architecture
 

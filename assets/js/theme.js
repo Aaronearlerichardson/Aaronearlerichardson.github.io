@@ -27,5 +27,9 @@
          applies for the rest of this page view, just won't persist. */
     }
     syncButton(next);
+    // Canvas-drawn widgets (e.g. the dice-roller demo) don't repaint on
+    // their own when CSS custom properties change, since canvas colors
+    // are baked into already-drawn pixels — they listen for this to redraw.
+    window.dispatchEvent(new CustomEvent("sitethemechange", { detail: { theme: next } }));
   });
 })();
