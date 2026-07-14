@@ -73,10 +73,10 @@ async function main() {
   const findings = [];
 
   findings.push({
-    title: "Contact email is a personal Gmail address, not a professional one",
+    title: "Contact email is a personal Gmail address — raised, and explicitly declined by the candidate",
     evidence: `Every page footer links \`jakdaxter31@gmail.com\` (confirmed present ${facts.emailOnAboutPage}× on the About page alone, and in the footer of all 18 pages audited). This is the address a Beacon Biosignals or Precision Neuroscience recruiter sees first.`,
-    impact: "A screen name like this reads as a personal/gaming handle next to a portfolio whose whole pitch is professional rigor (FDA IDE oversight, first-author research). It's a five-second credibility tax at the exact moment a recruiter forms a first impression.",
-    fix: "Set up a name-based address (aaron@[domain] if he buys a domain, or at minimum a plain Gmail like aaron.earlerichardson@gmail.com) and swap it everywhere the footer template renders (`_includes/header.html`, `index.md`, `projects/index.md` — it's templated, so likely a single include/data-file change).",
+    impact: "A screen name like this reads as a personal/gaming handle next to a portfolio whose whole pitch is professional rigor (FDA IDE oversight, first-author research) — the kind of five-second credibility tax a skeptical recruiter would notice on first look. Raised as a finding in the original pass; Aaron reviewed it and chose to keep this address rather than switch. Recorded here for completeness, not as an open action item.",
+    fix: "No action — candidate's explicit decision. Not a TODO.",
   });
 
   findings.push({
